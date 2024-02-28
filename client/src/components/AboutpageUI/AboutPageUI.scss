@@ -1,0 +1,57 @@
+.AboutMain {
+    margin-top: -3%;
+    padding: 3% 5%;
+
+    .aboutUs {
+        display: flex;
+        flex-direction: column;
+        margin: 2% auto;
+    }
+
+    .AboutText {
+        margin-top: 2%;
+        text-align: center;
+        height: fit-content;
+        width: 100%;
+    }
+    .AboutImg {
+        margin-top: 5%;
+        width: 75%;
+        margin: auto;
+        height: 75%;
+        border: 1px solid green;
+    }
+    .Line {
+        background-color: #3e4824;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .AboutImg {
+        height: 50vh;
+        border: 1px solid blue;
+        width: 100%;
+    }
+    .AboutText {
+        padding: 1%;
+        width: 80vw;
+        border: 1px solid red;
+    }
+
+    .AboutText p {
+        width: 100vw;
+        border: 1px solid red;
+        padding: 0;
+    }
+}
+
+.titleBox {
+    background-color: #3e4824;
+    color: #e7e8da;
+    border: 1px solid black;
+}
+
+.TestCard {
+    background-color: #e7e8da;
+    border-radius: 2rem;
+}

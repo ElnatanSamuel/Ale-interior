@@ -1,0 +1,11 @@
+.blogpagecontainer {
+    display: flex;
+    gap: 50px;
+
+    .blogcard {
+        flex: 3;
+    }
+    .recentblog {
+        flex: 1;
+    }
+}

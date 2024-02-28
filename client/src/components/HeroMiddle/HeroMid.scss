@@ -1,0 +1,25 @@
+.carouselcontainer {
+    height: 650px;
+    .carouselimg {
+        height: 650px;
+        object-fit: cover;
+    }
+}
+
+// @media (min-width: 760px) {
+//     .carouselcontainer {
+//         height: 450px;
+//         .carouselimg {
+//             height: 450px;
+//         }
+//     }
+// }
+
+// @media (min-width: 320px) {
+//     .carouselcontainer {
+//         height: 450px;
+//         .carouselimg {
+//             height: 450px;
+//         }
+//     }
+// }
