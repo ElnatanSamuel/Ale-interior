@@ -4,7 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 
 const Hero = () => {
   return (
-    <div className="max-w-7xl m-auto px-6">
+    <div className=" px-6">
       <Carousel
         showArrows={true}
         autoPlay={true}

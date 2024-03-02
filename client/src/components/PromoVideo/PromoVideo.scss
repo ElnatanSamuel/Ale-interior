@@ -1,0 +1,16 @@
+.promobgimage {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.promocontainer {
+    background: url("https://cdn.shopify.com/s/files/1/2908/9628/files/MHP_CoopersShoot_038_2048x2048.jpg?v=1614953184");
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}

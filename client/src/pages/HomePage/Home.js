@@ -3,15 +3,19 @@ import HeroMid from "../../components/HeroMiddle/HeroMiddle";
 import "./Home.scss";
 import About from "../../components/AboutUs/About";
 import ProjectSection from "../../components/ProjectsSection/ProjectSection";
-import TestimonialSlider from "../../components/Testimonials/Testimonials";
+import PromoVideo from "../../components/PromoVideo/PromoVideo";
+import LatestBlog from "../../components/LatestBlog/LatestBlog";
+import ParallaxHome from "../../components/Parralax/ParallaxHome";
+// import TestimonialSlider from "../../components/Testimonials/Testimonials";
 
 const Home = () => {
   return (
-    <div className="max-w-7xl m-auto">
+    <div className="">
       <HeroMid />
       <About />
       <ProjectSection />
-      <TestimonialSlider />
+      <ParallaxHome />
+      <LatestBlog />
     </div>
   );
 };

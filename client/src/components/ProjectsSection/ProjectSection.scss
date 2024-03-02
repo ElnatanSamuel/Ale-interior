@@ -6,8 +6,19 @@
 
     .projrow {
         height: 276px;
+        transition: all 0.5s ease;
         .projrowimg {
             height: 276px;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    .projrow2 {
+        transition: all 0.5s ease;
+        &:hover {
+            transform: scale(1.05);
         }
     }
 }

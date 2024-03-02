@@ -1,13 +1,16 @@
 import "./HeroMid.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import NavBar from "../NavbarHome/Navbar";
 
 const HeroMid = () => {
   return (
-    <div className="pt-10 max-w-7xl m-auto px-6">
+    <div className="relative">
+      <NavBar />
+
       <Carousel
         showArrows={true}
-        autoPlay={true}
+        autoPlay={false}
         infiniteLoop={true}
         showThumbs={false}
         showStatus={false}
@@ -21,12 +24,12 @@ const HeroMid = () => {
             alt=""
             className="carouselimg w-full absolute top-0 left-0 z-0"
           />
-          <div className="w-full h-full bg-black z-10 absolute top-0 opacity-40"></div>
-          <div className="herodesc z-20 flex flex-col space-y-4 justify-center items-center w-3/4 h-full">
-            <h1 className="text-white text-2xl font-medium text-center leading-10 md:text-6xl">
+          <div className="w-full h-full bg-black z-10 absolute top-0 opacity-50"></div>
+          <div className="herodesc z-20 flex flex-col space-y-6 justify-center items-center w-3/4 h-full">
+            <h1 className="text-white text-5xl font-bold text-center leading-10 md:text-7xl">
               Something Big
             </h1>
-            <p className="text-white  text-xs text-center leading-6 md:text-base md:leading-8">
+            <p className="text-white w-1/2 text-xs text-center leading-6 md:text-base md:leading-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
               doloribus sit numquam reiciendis facilis dolores nam eligendi
               eaque suscipit quisquam?
@@ -44,15 +47,15 @@ const HeroMid = () => {
           />
           <div className="w-full h-full bg-black z-10 absolute top-0 opacity-40"></div>
           <div className="herodesc z-20 flex flex-col space-y-8 justify-center items-center w-3/4 h-full">
-            <h1 className="text-white text-6xl font-medium text-center leading-10">
+            <h1 className="text-white text-7xl font-bold text-center leading-10">
               Another Big Thing
             </h1>
-            <p className="text-white w-3/4 text-base text-center leading-8">
+            <p className="text-white w-1/2 text-base text-center leading-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
               doloribus sit numquam reiciendis facilis dolores nam eligendi
               eaque suscipit quisquam?
             </p>
-            <button className="bg-green-900 text-sm text-white flex items-center justify-center py-4 px-8">
+            <button className="bg-green-900 text-xs text-white flex items-center justify-center py-4 px-8 md:text-lg">
               Blah Blah
             </button>
           </div>
@@ -65,15 +68,15 @@ const HeroMid = () => {
           />
           <div className="w-full h-full bg-black z-10 absolute top-0 opacity-40"></div>
           <div className="herodesc z-20 flex flex-col space-y-8 justify-center items-center w-3/4 h-full">
-            <h1 className="text-white text-6xl font-medium text-center leading-10">
+            <h1 className="text-white text-7xl font-bold text-center leading-10">
               Bigger Than The Last
             </h1>
-            <p className="text-white w-3/4 text-base text-center leading-8">
+            <p className="text-white w-1/2 text-base text-center leading-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
               doloribus sit numquam reiciendis facilis dolores nam eligendi
               eaque suscipit quisquam?
             </p>
-            <button className="bg-green-900 text-sm text-white flex items-center justify-center py-4 px-8">
+            <button className="bg-green-900 text-xs text-white flex items-center justify-center py-4 px-8 md:text-lg">
               Blah Blah
             </button>
           </div>
