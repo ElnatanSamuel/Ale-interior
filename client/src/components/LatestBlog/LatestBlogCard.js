@@ -1,7 +1,7 @@
 import React from "react";
 import "./Latestblog.scss";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
+// import InstagramIcon from "@mui/icons-material/Instagram";
+// import FacebookIcon from "@mui/icons-material/Facebook";
 
 const LatestBlogCard = () => {
   return (

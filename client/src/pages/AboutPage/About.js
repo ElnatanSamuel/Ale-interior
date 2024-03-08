@@ -6,7 +6,6 @@ import NavBarMain from "../../components/NavbarMain/NavbarMain";
 const About = () => {
   return (
     <div>
-      <NavBarMain />
       <AboutPageUI />
     </div>
   );

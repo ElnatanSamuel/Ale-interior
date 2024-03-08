@@ -1,0 +1,46 @@
+.offer {
+    //     background: #2d2d2d;
+    //     height: 400px;
+    //     width: 100%;
+    //     margin-bottom: 250px;
+    //     padding-top: 100px;
+}
+.OfferCardsMain {
+    gap: 20px;
+}
+
+.OfferCards {
+    width: 100%;
+    background: #fff;
+    box-shadow: rgba(111, 113, 47, 0.1) 0px 8px 24px;
+}
+.OfferCardsMain p {
+}
+.OfferCardsMain img {
+    width: 120px;
+    height: 100px;
+    border-radius: 50%;
+    // border: 1px solid rgb(111, 113, 47);
+}
+@media only screen and (max-width: 768px) {
+    .OfferCardsMain {
+        margin-top: 2%;
+        display: flex;
+        row-gap: 10%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .OfferCards {
+            border: 1px solid #3e4824;
+            margin-top: 10%;
+            border-radius: 0.3rem;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            width: 80%;
+        }
+    }
+    .OfferCardsMain img {
+        width: 30%;
+        height: 30%;
+    }
+}

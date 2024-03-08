@@ -10,7 +10,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="absolute w-full top-0 left-0 z-10 flex justify-between mt-2 items-center">
+    <nav className="absolute w-full top-0 left-0  flex justify-between mt-2 items-center z-10">
       <div className="w-full flex justify-between items-center mx-8">
         <div className="">
           <img src="/img/aleLogo.png" className="w-1/2" alt="" />
@@ -66,7 +66,7 @@ const NavBar = () => {
             <li className="text-white block mb-2">About</li>
           </Link>
           <Link to="/services">
-            <li className="text-white block mb-2">Services</li>
+            <li className="text-white block mb-2">Portfolio</li>
           </Link>
           <Link to="/blogs">
             <li className="text-white block mb-2">Blog</li>
@@ -88,7 +88,7 @@ const NavBar = () => {
               Blog
             </a>
             <a href="#" className="text-white block mb-2">
-              Services
+              Portfolio
             </a>
             <a href="#" className="text-white block mb-2">
               Contact

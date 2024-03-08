@@ -10,10 +10,10 @@ const NavBarMain = () => {
   };
 
   return (
-    <nav className="navmain h-26 z-10 flex justify-between items-center">
+    <nav className="navmain2 h-26 z-10 flex justify-between items-center">
       <div className="w-full flex justify-between items-center mx-8">
         <div className="">
-          <img src="/img/aleLogo.png" className="w-1/3" alt="" />
+          <img src="/img/alelogo2.png" className="w-1/3" alt="" />
         </div>
 
         {/* Mobile menu button on the right */}
@@ -58,7 +58,7 @@ const NavBarMain = () => {
           </button>
         </div>
         {/* Desktop menu centered */}
-        <div className="navLinks hidden md:flex space-x-4 justify-between w-1/3">
+        <div className="navLinks2 hidden md:flex space-x-4 justify-between w-1/3">
           <Link to="/">
             <li className="text-white block mb-2">Home</li>
           </Link>

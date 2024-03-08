@@ -1,46 +1,61 @@
 import React from "react";
 import AboutMVV from "../AboutUsMVV/AboutMVV";
 import "./AboutPageUI.scss";
+import NavBar from "../NavbarHome/Navbar";
+import WhatWeOffer from "../WhatWeOffer/WhatWeOffer";
+import PremiumQuality from "../PremiumQuality/PremiumQuality";
+import DIDI from "../DIDI/DIDI";
 
 const AboutPageUI = () => {
   return (
-    <div className="AboutMain max-w-7xl m-auto">
-      <div className="flex justify-center items-center">
-        {/* Left Div */}
-        <div className=" Line w-1/4 h-1">{/* Content for the left div */}</div>
-
-        {/* Middle Div with h1 */}
-        <div className="w-1/2 titleBox p-1">
-          <h1 className="text-4xl font-bold text-center">About Us</h1>
-        </div>
-
-        {/* Right Div */}
-        <div className="w-1/4 Line h-1">{/* Content for the right div */}</div>
+    <div className="AboutMain2">
+      <div className="aboutcontainerhero relative">
+        <NavBar />
+        <div className="w-full h-full bg-black z-1 absolute top-0 opacity-50"></div>
+        <h1 className="aboutherotext">
+          Transforming spaces into dreams, where every corner tells a story of
+          elegance and comfort – Welcome to a world where design meets emotion
+        </h1>
       </div>
-
-      <div className="aboutPageUI pt-8">
-        <div className="AboutImg w-full">
+      <div className="aboutPageUI2 w-full m-auto max-w-7xl">
+        <div className="AboutText2 flex  space-x-10">
+          <div className="abouttext2left w-full">
+            <h1 className="text-sm text-black">ABOUT US</h1>
+            <p className="aboutmaintitle2 opacity-80 font-medium">
+              Creative solutions by professional designers
+            </p>
+          </div>
+          <div className="abouttext2right w-full">
+            <p className="text-gray-600  text-md md:text-md">
+              This is a sample React component with an image and some paragraph
+              text. You can customize it further based on your requirements.
+              This is a sample React component with an image and some paragraph
+              text.
+            </p>
+            <p className="text-gray-600 pt-6 text-md md:text-md">
+              This is a sample React component with an image and some paragraph
+              text. You can customize it further based on your requirements.
+              This is a sample React component with an image and some paragraph
+              text. You can customize it further based on your requirements.
+              This is a sample React component with an image and some paragraph
+              text. You can customize it further based on your requirements.
+              This is a sample React component with an image and some paragraph
+              text. You can customize it further based on your requirements.
+            </p>
+          </div>
+        </div>
+        {/* <div className="AboutImg2">
           <img
             src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D"
             alt="Sample"
-            className="rounded-lg shadow-md"
+            className="h-screen object-cover"
           />
-        </div>
-        <div className="AboutText">
-          <p className="text-gray-600 text-md md:text-lg">
-            This is a sample React component with an image and some paragraph
-            text. You can customize it further based on your requirements. This
-            is a sample React component with an image and some paragraph text.
-            You can customize it further based on your requirements. This is a
-            sample React component with an image and some paragraph text. You
-            can customize it further based on your requirements. This is a
-            sample React component with an image and some paragraph text. You
-            can customize it further based on your requirements.
-          </p>
-        </div>
-        <div></div>
+        </div> */}
       </div>
+      <WhatWeOffer />
       <AboutMVV />
+      <PremiumQuality />
+      <DIDI />
     </div>
   );
 };

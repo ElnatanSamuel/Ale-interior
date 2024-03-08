@@ -1,9 +1,9 @@
 import React from "react";
 import "./Footer.scss";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import PinterestIcon from "@mui/icons-material/Pinterest";
+// import InstagramIcon from "@mui/icons-material/Instagram";
+// import FacebookIcon from "@mui/icons-material/Facebook";
+// import YouTubeIcon from "@mui/icons-material/YouTube";
+// import PinterestIcon from "@mui/icons-material/Pinterest";
 
 const Footer = () => {
   return (
@@ -42,7 +42,7 @@ const Footer = () => {
           </h1>
           <div className="h-1 w-8 bg-white"></div>
           <div className="icons flex items-center space-x-8">
-            <InstagramIcon
+            {/* <InstagramIcon
               className="text-offwhite"
               style={{ fontSize: "2rem" }}
             />
@@ -57,7 +57,7 @@ const Footer = () => {
             <PinterestIcon
               className="text-offwhite"
               style={{ fontSize: "2rem" }}
-            />
+            /> */}
           </div>
         </div>
       </div>

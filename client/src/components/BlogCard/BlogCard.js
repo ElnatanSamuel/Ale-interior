@@ -1,7 +1,7 @@
 import React from "react";
 import "./BlogCard.scss";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
+// import InstagramIcon from "@mui/icons-material/Instagram";
+// import FacebookIcon from "@mui/icons-material/Facebook";
 
 const BlogCard = () => {
   return (
@@ -22,8 +22,8 @@ const BlogCard = () => {
       <div className="blogcardlinks flex justify-between items-center">
         <p className="text-lightgreen font-bold">Read More &rarr;</p>
         <div className="blogcardicons flex space-x-4">
-          <InstagramIcon />
-          <FacebookIcon />
+          {/* <InstagramIcon />
+          <FacebookIcon /> */}
         </div>
       </div>
     </div>
