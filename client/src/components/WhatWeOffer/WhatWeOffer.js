@@ -6,13 +6,13 @@ const WhatWeOffer = () => {
     <>
       <div className=" offer max-w-7xl m-auto">
         <div className="">
-          <h2 className="text-lg text-brownmain text-center">WHY CHOOSE US</h2>
-          <p className="text-5xl mt-4 font-bold text-center opacity-80 text-black">
+          <h2 className="text-lg text-green-800 main text-center">WHY CHOOSE US</h2>
+          <h3 className="text-5xl mt-4 font-bold text-center opacity-80 text-black">
             We work to an extremely high <br /> standard of customer
             satisfaction
-          </p>
+          </h3>
         </div>
-        <div className="OfferCardsMain flex items-center pt-10 ">
+      <div className="OfferCardsMain flex items-center  ">
           <div className="OfferCards p-6 flex flex-col items-center space-y-4">
             <img
               src=" https://media.istockphoto.com/id/1226966972/vector/insurance-hand-icon-risk-coverage-sign-vector.jpg?s=612x612&w=0&k=20&c=kZbtM0rOo5y0pxVzkBJF35IOZZz1UJIwQjBP9JuiIxs="

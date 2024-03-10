@@ -1,10 +1,4 @@
-.offer {
-    //     background: #2d2d2d;
-    //     height: 400px;
-    //     width: 100%;
-    //     margin-bottom: 250px;
-    //     padding-top: 100px;
-}
+
 .OfferCardsMain {
     gap: 20px;
 }
@@ -13,6 +7,15 @@
     width: 100%;
     background: #fff;
     box-shadow: rgba(111, 113, 47, 0.1) 0px 8px 24px;
+}
+.offer h2{
+    font-size: 1.5rem;
+    
+}
+.offer h3{
+    font-size: 2rem;
+    padding-bottom: 3%;
+  
 }
 .OfferCardsMain p {
 }

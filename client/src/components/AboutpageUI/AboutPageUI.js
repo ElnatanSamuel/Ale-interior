@@ -11,16 +11,17 @@ const AboutPageUI = () => {
     <div className="AboutMain2">
       <div className="aboutcontainerhero relative">
         <NavBar />
-        <div className="w-full h-full bg-black z-1 absolute top-0 opacity-50"></div>
+        <div className="textOnPicture">
+        <div className="textOnPicture w-full h-full bg-black z-1 absolute top-0 opacity-50"></div>
         <h1 className="aboutherotext">
           Transforming spaces into dreams, where every corner tells a story of
-          elegance and comfort – Welcome to a world where design meets emotion
+          elegance and comfort <br/> – Welcome to a world where design meets emotion
         </h1>
-      </div>
-      <div className="aboutPageUI2 w-full m-auto max-w-7xl">
+      </div></div>
+      <div className="aboutPageUI2 ">
         <div className="AboutText2 flex  space-x-10">
           <div className="abouttext2left w-full">
-            <h1 className="text-sm text-black">ABOUT US</h1>
+            <h1 className="text-lg text-green-800">ABOUT US</h1>
             <p className="aboutmaintitle2 opacity-80 font-medium">
               Creative solutions by professional designers
             </p>
