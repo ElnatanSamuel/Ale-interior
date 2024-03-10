@@ -2,21 +2,21 @@
 
 @media only screen and (max-width: 768px) {
     .moblileNav{
-      
+      height: 90vh;
         background-color: rgba(0, 0, 0, 0.877);
         color:whitesmoke;
         z-index: 0.95;
         margin-top: -5%;
+        padding: 20%;
     }
     .moblileNav span{
         
-       font-size: 1.4rem;
+       font-size: 1.3rem;
         margin-bottom:5%;
     }
 }
 .navLinks {
     overflow-x: hidden;
-
     width: 60% !important ;
     
     li {

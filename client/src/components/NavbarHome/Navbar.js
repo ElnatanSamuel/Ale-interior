@@ -24,13 +24,13 @@ const NavBar = () => {
           >
             {isMobileMenuOpen ? (
               // Render 'X' when the menu is open
-              <svg class="w-10 h-10"  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg class="w-8 h-8"  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
             ) : (
               // Render the hamburger icon when the menu is closed
               <svg
-                className="w-8 h-8"
+                className="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -69,7 +69,7 @@ const NavBar = () => {
 
 {/* Mobile menu items centered within the navbar */}
 {isMobileMenuOpen && (
-  <div className="moblileNav md:hidden absolute top-full left-1/2 transform -translate-x-1/2 h-screen w-full  rounded-md transition-opacity duration-300 flex flex-col justify-evenly items-center">
+  <div className="moblileNav md:hidden absolute top-full left-1/2 transform -translate-x-1/2 w-full  rounded-md transition-opacity duration-300 flex flex-col justify-evenly items-center">
     <Link to="/">
       <span >Home</span>
     </Link>
