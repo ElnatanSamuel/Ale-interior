@@ -19,7 +19,7 @@ const AboutPageUI = () => {
         </h1>
       </div></div>
       <div className="aboutPageUI2 ">
-        <div className="AboutText2 flex  space-x-10">
+        <div className="AboutText2 flex">
           <div className="abouttext2left w-full">
             <h1 className="text-lg text-green-800">ABOUT US</h1>
             <p className="aboutmaintitle2 opacity-80 font-medium">

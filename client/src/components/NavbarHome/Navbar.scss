@@ -1,7 +1,27 @@
+
+
+@media only screen and (max-width: 768px) {
+    .moblileNav{
+      
+        background-color: rgba(0, 0, 0, 0.877);
+        color:whitesmoke;
+        z-index: 0.95;
+        margin-top: -5%;
+    }
+    .moblileNav span{
+        
+       font-size: 1.4rem;
+        margin-bottom:5%;
+    }
+}
 .navLinks {
+    overflow-x: hidden;
+
+    width: 60% !important ;
+    
     li {
         color: #fff;
-        font-weight: 400;
+        font-weight: 400;       
         font-size: 1.05rem;
         padding: 0.3rem 0.5rem;
         position: relative; /* Ensure ::after is positioned relative to this */

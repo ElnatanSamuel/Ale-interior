@@ -58,7 +58,7 @@ const NavBarMain = () => {
           </button>
         </div>
         {/* Desktop menu centered */}
-        <div className="navLinks2 hidden md:flex space-x-4 justify-between w-1/3">
+        <div className="navLinks2 hidden md:flex  justify-between w-1/3">
           <Link to="/">
             <li className="text-white block mb-2">Home</li>
           </Link>

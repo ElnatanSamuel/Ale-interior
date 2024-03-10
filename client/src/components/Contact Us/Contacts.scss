@@ -1,5 +1,9 @@
+contactsMain{
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(62,72,37,1) 100%);
+    color: whitesmoke !important;
+}
 .contactsMain{
-    margin-top: 2%;
+    margin-top: 5%;
  }
 .contact{
     margin: auto;
@@ -16,13 +20,13 @@
     gap:0.5rem;
 }
 .btn{ 
-    background-color: #3e482588;
+    background-color: #576435bf;
     width: fit-content;
     margin: auto;
     padding: 2% 4%;
 }   
 .btn:hover{
-    background-color: #3e4825;
+    background-color: rgba(87, 106, 40, 0.996);
     color: whitesmoke;
 }
 .contactUs{    
@@ -41,7 +45,7 @@
     }
     .contact form{
         width: 90%;
-        margin: auto;
+        margin: 15% auto;
         }
         .contactUs{    
             padding: 0% 3%;

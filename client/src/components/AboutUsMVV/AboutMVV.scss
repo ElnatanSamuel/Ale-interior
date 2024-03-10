@@ -52,7 +52,7 @@
 }
 @media only screen and (max-width: 768px) {
     .MVV {
-        border: 1px solid black;
+
         display: flex;
         row-gap: 1  5%;
         flex-direction: column;
@@ -62,13 +62,12 @@
         .mission,
         .vision,
         .value {
-            width: 60%;
+            width: 80%;
             height: fit-content;
             margin-bottom: 3%;
         }
     }
     .MVV img {
-        border: 1px solid green;
         width: 30%;
         margin: auto;
         height: 30%;

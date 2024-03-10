@@ -3,8 +3,8 @@ import "./PremiumQuality.scss";
 
 const PremiumQuality = () => {
   return (
-    <div className="premiumquality max-w-7xl m-auto flex items-center space-x-32 pt-12">
-      <div className="w-full flex-1 relative">
+    <div className="premiumquality max-w-7xl m-auto flex items-center md:space-x-32 pt-12">
+      <div className="w-full md:flex-1 relative">
         <img
           src="https://coolwallpapers.me/picsup/3074830-apartment_architecture_chairs_comfort_contemporary_curtain_design_floor_furniture_home_house_indoors_inside_interior_interior-design_lamp_light_living-room_luxury_modern_room_seat_sofa_table_wind.jpg"
           alt=""
@@ -16,12 +16,12 @@ const PremiumQuality = () => {
           className="premiumimg2"
         />
       </div>
-      <div className="w-full flex-1 flex flex-col space-y-6">
+      <div className="PremiumQualityText w-full md:flex-1 flex flex-col space-y-6">
         <p className="font-bold text-brownmain">PREMIUM QUALITY</p>
-        <p className="text-6xl font-bold opacity-90">
+        <p className="text-3xl md:text-6xl font-bold opacity-90">
           Your comfort is our only priority
         </p>
-        <p className="text-nase">
+        <p className="text-nase text-center">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi tempore
           dicta voluptas quos doloribus aliquam maxime, debitis voluptatibus
           voluptates dolor.
@@ -31,7 +31,7 @@ const PremiumQuality = () => {
           <p className="opacity-80 text-sm">MON-FRI: 10PM-12PM</p>
         </div>
 
-        <button className="py-4 w-1/3 px-6 bg-brownmain text-white">
+        <button className=" bg-brownmain text-white">
           Our services &rarr;
         </button>
       </div>

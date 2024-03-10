@@ -45,18 +45,17 @@
                 display: flex;
                 flex-direction: column;
             }           
-            .abouttext2left {
-                padding: 1%;
-                
-            }
+           
             .abouttext2left p{
                 padding: 2%;
                 
-                text-align: justify;
+                text-align: center;
             }
             .abouttext2right p {
                padding: 2%;
-                text-align: justify;
+              
+                text-align: center;
+                margin: auto;
             }
     }    
     

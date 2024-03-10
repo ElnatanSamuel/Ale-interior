@@ -1,7 +1,6 @@
 import React from 'react';
 import "./Contacts.scss"; 
-import NavBar from './../../components/NavbarMain/NavbarMain'
-
+import NavBar from "../NavbarHome/Navbar";
 export default class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -19,7 +18,7 @@ export default class Contact extends React.Component {
        <div className='contact'>
       <form className="test-mailing">
         <h2 className='text-2xl mt-2 md:text-3xl text-center'>Get in touch!</h2>
-        <h3 className='mb-4 text-gray-400'>Shoot us a message if you have a question.</h3>
+        <h3 className='mb-4 text-gray-300'>Shoot us a message if you have a question.</h3>
      
         <lable>Your name </lable> <input
           type="text"
@@ -27,7 +26,7 @@ export default class Contact extends React.Component {
           placeholder="Your Full Name"
           value={this.state.name}
           onChange={this.handleChange}
-          required className='p-4 rounded-lg mb-4 border border-green-600 focus:border-green-900 focus:outline-none'
+          required className='p-4 rounded-lg mb-4 border  focus:border-green-900 focus:outline-none'
         />
         {/* Input field for Email */}
         <lable>Your email </lable>  <input
@@ -36,7 +35,7 @@ export default class Contact extends React.Component {
           placeholder="Your Email"
           value={this.state.email}
           onChange={this.handleChange}
-          required className='border border-green-600 focus:border-green-900 focus:outline-none p-4 rounded-lg mb-4'
+          required className='border focus:border-green-900 focus:outline-none p-4 rounded-lg mb-4'
           />
      <lable>Message </lable><textarea
           type="text"
@@ -45,28 +44,27 @@ export default class Contact extends React.Component {
           rows='5' cols='10'
           value={this.state.feedback}
           onChange={this.handleChange}
-          required  className='p-2 rounded-lg mb-2 border border-green-600 focus:border-green-900 focus:outline-none'
+          required  className='p-2 rounded-lg mb-2 border  focus:border-green-900 focus:outline-none'
           />
         <input type="button" value="Submit" className="btn rounded-lg" onClick={this.handleSubmit} />
       </form>
       <div className='contactUs'>
-      <h1  className='text-3xl text-center'>Contact us </h1>
+      <h1  className='text-3xl mt-4 text-center'>Visit us!  </h1>
 
-  <h2  className='text-3xl mb-4 text-center'>Visit us! </h2>
   <div>
-  <h3  className='text-xl px-8 my-5 text-gray-800 '> Address</h3>
+  <h3  className='text-xl px-8 my-5 text-gray-200 '> Address</h3>
  <div className='flex gap-8 px-4'> <a href="#" className='text-2xl hover:text-blue-600'>
       <i class="fa fa-map-marker icon" ></i>    </a>
       <p> somewhere in addis </p>
       </div>
-      <h3  className='px-8 text-xl my-5  mt-8 text-gray-800 '> Call Us</h3>
+      <h3  className='px-8 text-xl my-5  mt-8 text-gray-200 '> Call Us</h3>
  <div className='flex gap-8 px-4'> <a href="#" className='text-2xl hover:text-green-600'>
       <i class="fa-solid fa-phone icon" ></i>    </a>
       <p> +0912345679 </p>
       </div>
       <hr/>
 </div>
-<h3 className='text-xl px-8 text-center mt-12 text-gray-800'>Follow us on social media to see our latest work</h3>
+<h3 className='text-xl px-8 text-center mt-12 text-gray-500'>Follow us on social media to see our latest work</h3>
       <ul>
          <li>
     <a href="#">
