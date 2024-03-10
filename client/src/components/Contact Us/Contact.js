@@ -15,7 +15,7 @@ export default class Contact extends React.Component {
       <div className='contactsMain'>    
       <NavBar/>
        <div className='contact'>
-      <form className="test-mailing">
+      <form className="test-mailing md:mt-16">
         <h2 className='text-2xl mt-2 md:text-3xl text-center'>Get in touch!</h2>
         <h3 className='mb-4 text-gray-300'>Shoot us a message if you have a question.</h3>
      
@@ -48,7 +48,7 @@ export default class Contact extends React.Component {
         <input type="button" value="Submit" className="btn rounded-lg" onClick={this.handleSubmit} />
       </form>
       <div className='contactUs'>
-      <h1  className='text-3xl md:mt-4 text-center'>Visit us!  </h1>
+      <h1  className='text-3xl md:mt-20 text-center'>Visit us!  </h1>
 
   <div>
   <h3  className='text-xl px-8 my-5 md:text-gray-200 '> Address</h3>
