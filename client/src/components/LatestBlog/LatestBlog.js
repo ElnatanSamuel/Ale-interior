@@ -11,7 +11,7 @@ const LatestBlog = () => {
         Latest articles
       </p>
 
-      <div className="flex justify-center space-x-6 pt-4">
+      <div className="laterstBlogs md:flex justify-center md:space-x-6 pt-4">
         <LatestBlogCard />
         <LatestBlogCard />
         <LatestBlogCard />
