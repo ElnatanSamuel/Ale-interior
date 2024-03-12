@@ -3,7 +3,7 @@ import "./ProjectSection.scss";
 
 const ProjectSection = () => {
   return (
-    <div className="pt-6 mt-20 h-full max-w-7xl m-auto px-6">
+    <div className=" md:pt-6 mt-12 md:mt-20 h-full max-w-7xl m-auto px-6">
       <div className="flex flex-col item-center justify-center">
         <h1 className="text-lg  text-center text-brownmain">OUR PROJECT</h1>
         <p className="text-5xl mt-4 font-bold text-center opacity-80 text-black">

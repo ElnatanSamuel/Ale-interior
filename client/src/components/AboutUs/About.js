@@ -41,7 +41,7 @@ const About = () => {
             molestiae quas officia eligendi voluptatum ab. Quos a, excepturi
             libero quidem odit asperiores dolore aut ea nostrum incidunt. Beatae
           </p>
-          <button className="py-4 w-1/2 px-6 bg-brownmain text-white">
+          <button className="md:py-4 w-1/2 md:px-6 bg-brownmain text-white">
             Continue Reading &rarr;
           </button>
         </motion.div>
