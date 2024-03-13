@@ -6,10 +6,10 @@ const AboutMVV = () => {
     <>
       <div className="pt-20">
         <div className="MVVsocket flex flex-col items-center space-y-8 relative">
-          <p className="text-5xl text-center font-bold text-white">
+          <p className="text-3xl md:text-5xl text-center font-bold text-white">
             What we stand for
           </p>
-          <p className="text-white text-base text-center w-1/3">
+          <p className="text-white md:text-xl text-center w-full px-4 md:w-1/2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
             blanditiis sequi dolore ut neque voluptate adipisci perspiciatis
             nesciunt, vero aliquid.

@@ -38,7 +38,7 @@ const HeroMid = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.5, duration: 0.5 }}
-              className="text-white w-1/2 text-xs text-center leading-6 md:text-base md:leading-8"
+              className="text-white md:w-1/2 text-xs text-center leading-6 md:text-base md:leading-8"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
               doloribus sit numquam reiciendis facilis dolores nam eligendi
@@ -62,10 +62,10 @@ const HeroMid = () => {
           />
           <div className="w-full h-full bg-black z-10 absolute top-0 opacity-40"></div>
           <div className="herodesc z-20 flex flex-col space-y-8 justify-center items-center w-3/4 h-full">
-            <h1 className="text-white text-7xl font-bold text-center leading-10">
+            <h1 className="text-white text-5xl md:text-7xl font-bold text-center leading-10">
               Another Big Thing
             </h1>
-            <p className="text-white w-1/2 text-base text-center leading-8">
+            <p className="text-white md:w-1/2 text-base text-center leading-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
               doloribus sit numquam reiciendis facilis dolores nam eligendi
               eaque suscipit quisquam?
@@ -83,10 +83,10 @@ const HeroMid = () => {
           />
           <div className="w-full h-full bg-black z-10 absolute top-0 opacity-40"></div>
           <div className="herodesc z-20 flex flex-col space-y-8 justify-center items-center w-3/4 h-full">
-            <h1 className="text-white text-7xl font-bold text-center leading-10">
+            <h1 className="text-white text-5xl md:text-7xl font-bold text-center leading-10">
               Bigger Than The Last
             </h1>
-            <p className="text-white w-1/2 text-base text-center leading-8">
+            <p className="text-white md:w-1/2 text-base text-center leading-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
               doloribus sit numquam reiciendis facilis dolores nam eligendi
               eaque suscipit quisquam?

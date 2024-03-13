@@ -1,4 +1,5 @@
 .premiumquality {
+    
     margin-bottom: 200px;
     .premiumimg1 {
         height: 600px;
@@ -12,5 +13,37 @@
         position: absolute;
         top: 300px;
         left: 200px;
+    }
+}
+button{
+    width: fit-content;
+    margin: auto;
+    padding: 2% 4%;
+}
+@media  only screen and (max-width:769px) {
+    .premiumimg2{
+        display:none;
+    }
+    .PremiumQualityText {
+   
+        width: 100%;
+        padding: 3%;
+        margin: auto;
+    }
+    .premiumimg1{
+        object-fit: cover;
+        width: 80%;
+        padding: 2%;
+        height: 300px;
+        margin: auto;
+        height: 70%;
+    }
+    .premiumquality{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+        margin-bottom: 5%;
     }
 }

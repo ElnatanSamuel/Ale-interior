@@ -1,0 +1,130 @@
+.contactsMain{
+   
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(62,72,37,1) 100%);
+    color: whitesmoke !important;
+}
+
+.contact{
+    margin: auto;
+    width: 85%;
+    display: flex;
+    height: fit-content;
+    padding: 2%;
+    gap: 2rem;
+}
+.contact form{
+    display: flex;
+    width: 50%;
+
+    flex-direction: column;
+    gap:0.5rem;
+}
+.btn{ 
+    background-color: #576435bf;
+    width: fit-content;
+    margin: auto;
+    padding: 2% 4%;
+}   
+.btn:hover{
+    background-color: rgba(87, 106, 40, 0.996);
+    color: whitesmoke;
+}
+.contactUs{    
+    padding: 0% 3%;
+    width: 50%;
+}
+@media only screen and (max-width:768px) {
+    .contact{
+        margin:auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2%;
+      
+    }
+    .contact form{
+        width: 90%;
+        margin: 25% auto;
+        }
+        .contactUs{ 
+      color:black !important;  
+            padding: 0% 3%;
+            width: 100%;
+        }
+        .contactUs h1{
+            margin-top: -25%;
+            
+        }
+        ul{
+            margin-bottom: 5%;
+        }
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+ul li a {
+    width: 60px;
+    height: 60px;
+    background-color: #dbe3d6;
+text-align: center;
+line-height: 60px;
+font-size: 30px;
+margin: 0 10px;
+display: block;
+border-radius: 50%;
+position: relative;
+overflow: hidden;
+
+z-index: 1;
+}
+
+ul li a .icon {
+position: relative;
+color: #262626;
+transition: .5s;
+z-index: 3;
+}
+
+ul li a:hover .icon {
+color: #fff;
+
+transform: rotateY(360deg);
+}
+
+ul li a:before {
+content: "";
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+border: none;
+height: 100%;
+background: #f00;
+transition: .5s;
+z-index: 2;
+}
+
+ul li a:hover:before {
+top: 0;
+}
+
+ul li:nth-child(1) a:before{
+    border: none;
+background: rgb(16, 201, 16);
+}
+
+ul li:nth-child(2) a:before{
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+ul li:nth-child(3) a:before {
+    background: linear-gradient(90deg, rgba(255,0,80,1) 0%, rgba(0,242,234,1) 36%, rgba(0,0,0,1) 100%);
+}
+
+ul li:nth-child(4) a:before {
+background: #dd4b39;
+}

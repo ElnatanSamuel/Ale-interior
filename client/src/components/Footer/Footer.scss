@@ -1,6 +1,8 @@
 .footercontainer {
-    height: 300px;
+    height: 200px;    
     background: #0f0f0f;
+    justify-content: space-evenly;
+    align-items: center;
 
     .middetail {
         margin-bottom: -20px;
@@ -10,4 +12,29 @@
         margin-top: -60px;
         margin-bottom: -15px;
     }
+}
+
+.contactlist ul{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width:769px){
+    .footercontainer {
+        height: 300px;
+        padding: 1%;
+
+
+    }
+    .contactlist li {
+        padding: 2%;
+    display: flex;
+
+    }
+    .col img{
+        
+        width: 75%;
+
+    }
+
 }

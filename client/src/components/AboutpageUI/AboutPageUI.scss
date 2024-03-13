@@ -8,24 +8,68 @@
         // background-size: cover;
         // background-repeat: no-repeat;
         position: relative;
-        width: 100%;
-
-        .aboutherotext {
-            color: white;
-            z-index: 10;
-            font-weight: 600;
-            font-size: 28px;
-            position: absolute;
-            margin-top: 430px;
-            margin-left: 30px;
-            width: 60%;
-        }
+        width: 100vw;    
     }
+}
+    .textOnPicture {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+    }
+      
+        .aboutherotext {
+          position: absolute;
+          bottom: 0;
+          font-size: 1.7rem;
+          left: 0;
+          width: 60%;
+          padding: 30px;
+          background-color: rgba(0, 0, 0, 0); // Semi-transparent black background
+          color: white;
+          z-index: 2;
+        }
+      
+      
+        @media only screen and (max-width: 769px) { 
+            .aboutherotext {
+                width: 90%;
+                font-size: 1.3rem;
+            }
+            .aboutPageUI2{
+                padding: 1%;
+            }
+            .AboutText2{               
+                display: flex;
+                flex-direction: column;
+            }           
+           
+            .abouttext2left p{
+                padding: 2%;
+                
+                text-align: center;
+            }
+            .abouttext2right p {
+               padding: 2%;
+              
+                text-align: center;
+                margin: auto;
+            }
+    }    
+    
     .aboutPageUI2 {
+        width: 100%;
         margin-top: 4%;
         margin-bottom: 4%;
-        padding: 3% 0% 3% 3%;
+        padding:3%;
 
+        .AboutText2{
+           
+            display: flex;           
+
+        }
         .abouttext2left {
             flex: 1;
         }
@@ -39,9 +83,7 @@
         margin: 2% auto;
     }
 
-    .AboutText2 {
-        // margin-top: 2%;
-    }
+    
     .AboutImg2 {
         height: 100vh;
     }
@@ -51,7 +93,7 @@
     .Line {
         background-color: #3e4824;
     }
-}
+
 
 @media only screen and (max-width: 500px) {
     .AboutImg {

@@ -1,12 +1,15 @@
 .MVVsocket {
-    background: #2d2d2d;
-    height: 400px;
+    background: #4b4b4b;
+    height: fit-content;
+    padding: 3%;
     width: 100%;
-    margin-bottom: 250px;
-    padding-top: 100px;
+    margin-bottom: 5%;
+    padding-top: 7%;
 }
 
 .MVV {
+   
+    gap: 2%;
     margin-top: 200px;
 }
 
@@ -20,6 +23,7 @@
 .vision,
 .value {
     width: 100%;
+    border-radius: 2%;
     height: fit-content;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border: 0.5px solid rgba(0, 0, 0, 0.1);
@@ -41,51 +45,16 @@
 .value {
     // cursor: pointer;
     position: relative;
-    padding: 10px 20px;
+    padding: 2%;
     background: white;
-    font-size: 28px;
-    // border-top-right-radius: 10px;
-    // border-bottom-left-radius: 10px;
-    // transition: all 1s;
-    // &:after,
-    // &:before {
-    //     content: " ";
-    //     width: 10px;
-    //     height: 10px;
-    //     position: absolute;
-    //     border: 0px solid #fff;
-    //     transition: all 1s;
-    // }
-    // &:after {
-    //     top: -1px;
-    //     left: -1px;
-    //     border-top: 5px solid #3e4824;
-    //     border-left: 5px solid #3e4824;
-    // }
-    // &:before {
-    //     bottom: -1px;
-    //     right: -1px;
-    //     border-bottom: 5px solid #3e4824;
-    //     border-right: 5px solid #3e4824;
-    // }
-    // &:hover {
-    //     border-top-right-radius: 0px;
-    //     border-bottom-left-radius: 0px;
-    //     transform: scale(1.05);
-    //     // background:rgba(0,0,0,.5);
-    //     // color:white;
-    //     &:before,
-    //     &:after {
-    //         width: 100%;
-    //         height: 100%;
-    //         // border-color:white;
-    //     }
-    // }
+    font-size: 1.7rem;
+    
 }
 @media only screen and (max-width: 768px) {
     .MVV {
-        border: 1px solid black;
+
         display: flex;
+        row-gap: 1  5%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -95,11 +64,10 @@
         .value {
             width: 80%;
             height: fit-content;
-            margin-bottom: 2%;
+            margin-bottom: 3%;
         }
     }
     .MVV img {
-        border: 1px solid green;
         width: 30%;
         margin: auto;
         height: 30%;

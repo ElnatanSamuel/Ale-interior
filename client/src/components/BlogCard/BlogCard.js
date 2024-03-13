@@ -5,7 +5,7 @@ import "./BlogCard.scss";
 
 const BlogCard = () => {
   return (
-    <div className="flex flex-col space-y-6">
+    <div className="flex flex-col space-y-8">
       <img
         src="https://isdi.in/blog/wp-content/uploads/2021/07/Interior-Material-Combinations.jpg"
         alt=""
