@@ -1,17 +1,23 @@
 import React from "react";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import "./Contacts.scss";
 import Contact from "../../components/Contacts/Contacts";
 
 const ContactsPage = () => {
   return <Contact />;
 =======
+=======
+>>>>>>> refs/remotes/origin/main
 import Contact from './../../components/Contact Us/Contact';
 
 const Contacts = () => {
   return (
     <Contact/>
   );
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
+=======
 >>>>>>> refs/remotes/origin/main
 };
 

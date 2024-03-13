@@ -1,7 +1,6 @@
 import React from "react";
 import "./Contacts.scss";
 import NavBar from "./../../components/NavbarMain/NavbarMain";
-import emailjs from "@emailjs/browser";
 
 export default class Contact extends React.Component {
   constructor(props) {
