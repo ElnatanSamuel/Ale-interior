@@ -17,22 +17,17 @@ const NavBar = () => {
         </div>
 
         {/* Mobile menu button on the right */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button
             className="text-black focus:outline-none"
             onClick={toggleMobileMenu}
           >
-            {isMobileMenuOpen ? (
-              // Render 'X' when the menu is open
-              <svg class="w-8 h-8"  fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-            ) : (
+            {isMobileMenuOpen ? null : ( // Render 'X' when the menu is open
               // Render the hamburger icon when the menu is closed
               <svg
-                className="w-6 h-6"
+                className="w-6 h-6 z-10"
                 fill="none"
-                stroke="currentColor"
+                stroke="white"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -47,7 +42,7 @@ const NavBar = () => {
           </button>
         </div>
         {/* Desktop menu centered */}
-        <div className="navLinks hidden md:flex  justify-between">
+        <div className="navLinks hidden lg:flex  justify-between">
           <Link to="/">
             <li className="text-white block mb-2">Home</li>
           </Link>
@@ -65,29 +60,46 @@ const NavBar = () => {
           </Link>
         </div>
         {/* Mobile menu items centered within the navbar */}
-       
 
-{/* Mobile menu items centered within the navbar */}
-{isMobileMenuOpen && (
-  <div className="moblileNav md:hidden absolute top-full left-1/2 transform -translate-x-1/2 w-full  rounded-md transition-opacity duration-300 flex flex-col justify-evenly items-center">
-    <Link to="/">
-      <span >Home</span>
-    </Link>
-    <Link to="/about">
-      <span >About</span>
-    </Link>
-    <Link to="/services">
-      <span >Portfolio</span>
-    </Link>
-    <Link to="/blogs">
-      <span >Blog</span>
-    </Link>
-    <Link to="/contacts">
-      <span >Contact</span>
-    </Link>
-  </div>
-)}
-
+        {/* Mobile menu items centered within the navbar */}
+        {isMobileMenuOpen && (
+          <div className="moblileNav lg:hidden fixed top-0 left-1/2 transform -translate-x-1/2 w-full  rounded-md transition-opacity duration-300 flex flex-col justify-evenly items-center">
+            <button
+              className="absolute top-4 right-2"
+              onClick={toggleMobileMenu}
+            >
+              <svg
+                class="w-8 h-8 z-10"
+                fill="none"
+                stroke="white"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+            <Link to="/">
+              <span>Home</span>
+            </Link>
+            <Link to="/about">
+              <span>About</span>
+            </Link>
+            <Link to="/services">
+              <span>Portfolio</span>
+            </Link>
+            <Link to="/blogs">
+              <span>Blog</span>
+            </Link>
+            <Link to="/contacts">
+              <span>Contact</span>
+            </Link>
+          </div>
+        )}
       </div>
     </nav>
   );

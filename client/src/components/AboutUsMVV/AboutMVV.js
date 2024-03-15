@@ -6,10 +6,10 @@ const AboutMVV = () => {
     <>
       <div className="pt-20">
         <div className="MVVsocket flex flex-col items-center space-y-8 relative">
-          <p className="text-3xl md:text-5xl text-center font-bold text-white">
+          <p className="text-xl md:text-3xl lg:text-5xl text-center font-bold text-white">
             What we stand for
           </p>
-          <p className="text-white md:text-xl text-center w-full px-4 md:w-1/2">
+          <p className="text-white text-sm lg:text-xl text-center w-full px-4 lg:w-1/2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
             blanditiis sequi dolore ut neque voluptate adipisci perspiciatis
             nesciunt, vero aliquid.
@@ -20,8 +20,8 @@ const AboutMVV = () => {
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI4f2kSDaKZJvlc_TsEr0X1oB2i-EMdaLLqg&usqp=CAU"
                 alt="mission"
               />
-              <h2 className="font-bold">Mission</h2>
-              <p className="text-sm text-center">
+              <h2 className="font-bold text-sm">Mission</h2>
+              <p className="text-xs text-center">
                 {" "}
                 In publishing and graphic design, Lorem ipsum is a placeholder
                 text commonly used to demonstrate the visual form of a document

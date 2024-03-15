@@ -9,3 +9,14 @@
         flex: 1;
     }
 }
+
+@media (max-width: 768px) {
+    .blogpagecontainer {
+        .recentblog {
+            display: none;
+        }
+        .blogcard {
+            padding: 20px;
+        }
+    }
+}

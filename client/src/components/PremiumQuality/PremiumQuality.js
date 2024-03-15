@@ -17,11 +17,13 @@ const PremiumQuality = () => {
         />
       </div>
       <div className="PremiumQualityText w-full md:flex-1 flex flex-col space-y-6">
-        <p className="font-bold text-brownmain">PREMIUM QUALITY</p>
-        <p className="text-3xl md:text-6xl font-bold opacity-90">
+        <p className="font-bold text-sm md:text-base text-brownmain">
+          PREMIUM QUALITY
+        </p>
+        <p className="text-xl md:text-4xl lg:text-6xl font-bold opacity-90">
           Your comfort is our only priority
         </p>
-        <p className="text-nase text-center">
+        <p className="text-sm md:w-5/6">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi tempore
           dicta voluptas quos doloribus aliquam maxime, debitis voluptatibus
           voluptates dolor.
@@ -31,7 +33,7 @@ const PremiumQuality = () => {
           <p className="opacity-80 text-sm">MON-FRI: 10PM-12PM</p>
         </div>
 
-        <button className=" bg-brownmain text-white">
+        <button className=" bg-brownmain text-white md:w-1/3 py-4 px-8">
           Our services &rarr;
         </button>
       </div>

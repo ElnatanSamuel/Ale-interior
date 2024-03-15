@@ -1,3 +1,9 @@
 .blogcardimg {
     height: 450px;
 }
+
+@media (max-width: 768px) {
+    .blogcardimg {
+        height: 300px;
+    }
+}

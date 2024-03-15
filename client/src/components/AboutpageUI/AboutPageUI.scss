@@ -8,92 +8,86 @@
         // background-size: cover;
         // background-repeat: no-repeat;
         position: relative;
-        width: 100vw;    
     }
 }
-    .textOnPicture {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        display: flex;
-        align-items: flex-end;
+.textOnPicture {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.aboutherotext {
+    position: absolute;
+    bottom: 0;
+    font-size: 1.7rem;
+    left: 0;
+    width: 60%;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0); // Semi-transparent black background
+    color: white;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 769px) {
+    .aboutherotext {
+        width: 90%;
+        font-size: 1.3rem;
     }
-      
-        .aboutherotext {
-          position: absolute;
-          bottom: 0;
-          font-size: 1.7rem;
-          left: 0;
-          width: 60%;
-          padding: 30px;
-          background-color: rgba(0, 0, 0, 0); // Semi-transparent black background
-          color: white;
-          z-index: 2;
-        }
-      
-      
-        @media only screen and (max-width: 769px) { 
-            .aboutherotext {
-                width: 90%;
-                font-size: 1.3rem;
-            }
-            .aboutPageUI2{
-                padding: 1%;
-            }
-            .AboutText2{               
-                display: flex;
-                flex-direction: column;
-            }           
-           
-            .abouttext2left p{
-                padding: 2%;
-                
-                text-align: center;
-            }
-            .abouttext2right p {
-               padding: 2%;
-              
-                text-align: center;
-                margin: auto;
-            }
-    }    
-    
     .aboutPageUI2 {
-        width: 100%;
-        margin-top: 4%;
-        margin-bottom: 4%;
-        padding:3%;
-
-        .AboutText2{
-           
-            display: flex;           
-
-        }
-        .abouttext2left {
-            flex: 1;
-        }
-        .abouttext2right {
-            flex: 2;
-        }
+        padding: 1%;
     }
-    .aboutUs {
+    .AboutText2 {
         display: flex;
         flex-direction: column;
-        margin: 2% auto;
     }
 
-    
-    .AboutImg2 {
-        height: 100vh;
-    }
-    .aboutmaintitle2 {
-        font-size: 2rem;
-    }
-    .Line {
-        background-color: #3e4824;
-    }
+    .abouttext2left p {
+        padding: 2%;
 
+        text-align: center;
+    }
+    .abouttext2right p {
+        padding: 2%;
+
+        text-align: center;
+        margin: auto;
+    }
+}
+
+.aboutPageUI2 {
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 3%;
+
+    .AboutText2 {
+        display: flex;
+    }
+    .abouttext2left {
+        flex: 1;
+    }
+    .abouttext2right {
+        flex: 2;
+    }
+}
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    margin: 2% auto;
+}
+
+.AboutImg2 {
+    height: 100vh;
+}
+.aboutmaintitle2 {
+    font-size: 2rem;
+}
+.Line {
+    background-color: #3e4824;
+}
 
 @media only screen and (max-width: 500px) {
     .AboutImg {
@@ -111,6 +105,19 @@
         width: 100vw;
         border: 1px solid red;
         padding: 0;
+    }
+    .aboutherotext {
+        font-size: 1.1rem;
+        width: 100%;
+        padding: 30px 10px;
+    }
+    .aboutmaintitle2 {
+        font-size: 1.6rem;
+    }
+    .AboutMain2 {
+        .aboutcontainerhero {
+            height: 400px;
+        }
     }
 }
 

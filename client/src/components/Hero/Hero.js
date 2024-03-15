@@ -13,7 +13,7 @@ const Hero = () => {
         showStatus={false}
         autoFocus={true}
         emulateTouch={true}
-        className="corsel"
+        className=""
       >
         <div className="carouselcontainer flex justify-center items-center w-full h-full">
           <img
