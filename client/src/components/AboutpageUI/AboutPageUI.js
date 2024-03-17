@@ -5,6 +5,7 @@ import NavBar from "../NavbarHome/Navbar";
 import WhatWeOffer from "../WhatWeOffer/WhatWeOffer";
 import PremiumQuality from "../PremiumQuality/PremiumQuality";
 import DIDI from "../DIDI/DIDI";
+import { motion } from "framer-motion";
 
 const AboutPageUI = () => {
   return (
@@ -13,30 +14,60 @@ const AboutPageUI = () => {
         <NavBar />
         <div className="textOnPicture">
           <div className="textOnPicture w-full h-full bg-black z-1 absolute top-0 opacity-50"></div>
-          <h1 className="aboutherotext">
+          <motion.h1
+            initial={{ opacity: 0, x: 300 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="aboutherotext"
+          >
             Transforming spaces into dreams, where every corner tells a story of
             elegance and comfort. Welcome to a world where design meets emotion
-          </h1>
+          </motion.h1>
         </div>
       </div>
       <div className="aboutPageUI2 max-w-7xl m-auto">
         <div className="AboutText2 flex">
           <div className="abouttext2left w-full">
-            <h1 className="text-base text-center lg:text-left lg:text-lg text-green-800">
+            <motion.h1
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="text-base text-center lg:text-left lg:text-lg text-green-800"
+            >
               ABOUT US
-            </h1>
-            <p className="aboutmaintitle2 opacity-80 font-medium">
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="aboutmaintitle2 opacity-80 font-medium"
+            >
               Creative solutions by professional designers
-            </p>
+            </motion.p>
           </div>
           <div className="abouttext2right w-full">
-            <p className="text-gray-600  text-sm md:text-md">
+            <motion.p
+              initial={{ opacity: 0, x: 200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="text-gray-600  text-sm md:text-md"
+            >
               This is a sample React component with an image and some paragraph
               text. You can customize it further based on your requirements.
               This is a sample React component with an image and some paragraph
               text.
-            </p>
-            <p className="text-gray-600 pt-6 text-sm md:text-md">
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, x: 200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 1 }}
+              className="text-gray-600 pt-6 text-sm md:text-md"
+            >
               This is a sample React component with an image and some paragraph
               text. You can customize it further based on your requirements.
               This is a sample React component with an image and some paragraph
@@ -45,7 +76,7 @@ const AboutPageUI = () => {
               text. You can customize it further based on your requirements.
               This is a sample React component with an image and some paragraph
               text. You can customize it further based on your requirements.
-            </p>
+            </motion.p>
           </div>
         </div>
         {/* <div className="AboutImg2">

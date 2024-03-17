@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./NavbarMain.scss";
 import { Link } from "react-router-dom";
 
-const NavBarMain = () => {
+const NavBar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -10,40 +10,24 @@ const NavBarMain = () => {
   };
 
   return (
-    <nav className="navmain2 h-26 z-10 flex justify-between items-center">
+    <nav className="mainnav flex justify-between items-center z-10">
       <div className="w-full flex justify-between items-center mx-8">
         <div className="">
           <img src="/img/alelogo2.png" className="w-1/3" alt="" />
         </div>
 
         {/* Mobile menu button on the right */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button
             className="text-black focus:outline-none"
             onClick={toggleMobileMenu}
           >
-            {isMobileMenuOpen ? (
-              // Render 'X' when the menu is open
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                ></path>
-              </svg>
-            ) : (
+            {isMobileMenuOpen ? null : ( // Render 'X' when the menu is open
               // Render the hamburger icon when the menu is closed
               <svg
-                className="w-6 h-6"
+                className="w-6 h-6 z-10"
                 fill="none"
-                stroke="currentColor"
+                stroke="black"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -58,41 +42,62 @@ const NavBarMain = () => {
           </button>
         </div>
         {/* Desktop menu centered */}
-        <div className="navLinks2 hidden md:flex  justify-between w-1/3">
+        <div className="navLinks2 hidden lg:flex  justify-between">
           <Link to="/">
-            <li className="text-white block mb-2">Home</li>
+            <li className=" block mb-2">Home</li>
           </Link>
           <Link to="/about">
-            <li className="text-white block mb-2">About</li>
+            <li className=" block mb-2">About</li>
           </Link>
           <Link to="/services">
-            <li className="text-white block mb-2">Services</li>
+            <li className=" block mb-2">Portfolio</li>
           </Link>
           <Link to="/blogs">
-            <li className="text-white block mb-2">Blog</li>
+            <li className="block mb-2">Blog</li>
           </Link>
           <Link to="/contacts">
-            <li className="text-white block mb-2">Contact</li>
+            <li className=" block mb-2">Contact</li>
           </Link>
         </div>
         {/* Mobile menu items centered within the navbar */}
+
+        {/* Mobile menu items centered within the navbar */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-1/2 transform -translate-x-1/2 bg-white w-full h-screen py-3 my-1 rounded-md  transition-opacity duration-300 opacity-100 shadow-md shadow-bottom flex flex-col items-center">
-            <a href="#" className="text-white block mb-2">
-              Home
-            </a>
-            <a href="#" className="text-white block mb-2">
-              About
-            </a>
-            <a href="#" className="text-white block mb-2">
-              Blog
-            </a>
-            <a href="#" className="text-white block mb-2">
-              Services
-            </a>
-            <a href="#" className="text-white block mb-2">
-              Contact
-            </a>
+          <div className="moblileNav lg:hidden fixed top-0 left-1/2 transform -translate-x-1/2 w-full  rounded-md transition-opacity duration-300 flex flex-col justify-evenly items-center">
+            <button
+              className="absolute top-4 right-2"
+              onClick={toggleMobileMenu}
+            >
+              <svg
+                class="w-8 h-8 z-10"
+                fill="none"
+                stroke="white"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+            <Link to="/">
+              <span>Home</span>
+            </Link>
+            <Link to="/about">
+              <span>About</span>
+            </Link>
+            <Link to="/services">
+              <span>Portfolio</span>
+            </Link>
+            <Link to="/blogs">
+              <span>Blog</span>
+            </Link>
+            <Link to="/contacts">
+              <span>Contact</span>
+            </Link>
           </div>
         )}
       </div>
@@ -100,4 +105,4 @@ const NavBarMain = () => {
   );
 };
 
-export default NavBarMain;
+export default NavBar;

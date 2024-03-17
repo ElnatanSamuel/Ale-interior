@@ -1,23 +1,48 @@
 import React from "react";
 import "./ProjectSection.scss";
+import { motion } from "framer-motion";
 
 const ProjectSection = () => {
   return (
     <div className=" md:pt-6 mt-12 md:mt-20 h-full max-w-7xl m-auto px-6">
       <div className="flex flex-col item-center justify-center">
-        <h1 className="text-base text-center text-brownmain md:text-lg">
+        <motion.h1
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.4 }}
+          className="text-base text-center text-brownmain md:text-lg"
+        >
           OUR PROJECT
-        </h1>
-        <p className="text-3xl mt-4 font-bold text-center opacity-80 text-black md:text-5xl">
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="text-3xl mt-4 font-bold text-center opacity-80 text-black md:text-5xl"
+        >
           Explore our interior designs
-        </p>
-        <p className="text-sm mt-6 text-center  m-auto opacity-80 text-black md:w-1/2">
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="text-sm mt-6 text-center  m-auto opacity-80 text-black md:w-1/2"
+        >
           Explore finished kitchens from some of our customers and see how they
           created their dream kitchen while getting ideas for your own.
-        </p>
+        </motion.p>
       </div>
       <div className="projectscontainer pt-16 grid grid-cols-1 space-y-6 lg:space-y-0 lg:grid-cols-2 lg:space-x-6 w-full">
-        <div className="col ">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 1 }}
+          className="col "
+        >
           <div className="projrow2 w-full h-full relative flex justify-center items-end">
             <img
               src="https://www.thespruce.com/thmb/P4hBQtEPZVrrWPdbtXy7-wv9fiE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1161177015-f1de4ba58a6c4f50969d9119d80405a6.jpg"
@@ -38,9 +63,15 @@ const ProjectSection = () => {
               </button>
             </div>
           </div>
-        </div>
-        <div className="col flex flex-col md:flex-row lg:flex-col space-y-6 md:space-x-6 md:space-y-0 lg:space-y-6">
-          <div className="projrow row relative h-full flex justify-center items-end">
+        </motion.div>
+        <div className="col flex flex-col md:flex-row lg:flex-col space-y-6 md:space-x-6 md:space-y-0 lg:space-x-0 lg:space-y-6">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, delay: 1.2 }}
+            className="projrow row relative h-full flex justify-center items-end"
+          >
             <img
               src="https://t3.ftcdn.net/jpg/03/73/51/06/360_F_373510690_cQQLplLNbi0l84A7sftZq8dSvdKOGCcj.jpg"
               alt=""
@@ -59,8 +90,14 @@ const ProjectSection = () => {
                 View Details
               </button>
             </div>
-          </div>
-          <div className="projrow row h-full flex justify-center items-end relative">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.1, delay: 1.1 }}
+            className="projrow row h-full flex justify-center items-end relative"
+          >
             <img
               src="https://media.designcafe.com/wp-content/uploads/2023/01/31151510/contemporary-interior-design-ideas-for-your-home.jpg"
               alt=""
@@ -79,7 +116,7 @@ const ProjectSection = () => {
                 View Details
               </button>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 
