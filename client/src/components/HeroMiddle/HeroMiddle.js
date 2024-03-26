@@ -32,7 +32,7 @@ const HeroMid = () => {
               transition={{ delay: 2.5, duration: 1 }}
               className="text-white text-5xl font-bold text-center leading-10 md:text-7xl"
             >
-              Something Big
+             Ale Interior Design
             </motion.h1>
             <motion.p
               initial={{ opacity: 0 }}
@@ -40,9 +40,7 @@ const HeroMid = () => {
               transition={{ delay: 1.5, duration: 0.5 }}
               className="text-white md:w-1/2 text-xs text-center leading-6 md:text-base md:leading-8"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              doloribus sit numquam reiciendis facilis dolores nam eligendi
-              eaque suscipit quisquam?
+              Elevate Your Space, Elevate Your Life with us
             </motion.p>
             <motion.button
               initial={{ opacity: 0 }}
@@ -50,7 +48,7 @@ const HeroMid = () => {
               transition={{ delay: 0.5, duration: 0.2 }}
               className="bg-green-900 text-xs text-white flex items-center justify-center py-4 px-8 md:text-lg"
             >
-              Blah Blah
+      About Us
             </motion.button>
           </div>
         </div>
@@ -62,16 +60,14 @@ const HeroMid = () => {
           />
           <div className="w-full h-full bg-black z-10 absolute top-0 opacity-40"></div>
           <div className="herodesc z-20 flex flex-col space-y-8 justify-center items-center w-3/4 h-full">
-            <h1 className="text-white text-5xl md:text-7xl font-bold text-center leading-10">
-              Another Big Thing
+            <h1 className="text-white text-3xl md:text-4xl font-bold text-center leading-10">
+            Your Home, Your Style, Our Expertise
             </h1>
             <p className="text-white md:w-1/2 text-base text-center leading-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              doloribus sit numquam reiciendis facilis dolores nam eligendi
-              eaque suscipit quisquam?
+           
             </p>
             <button className="bg-green-900 text-xs text-white flex items-center justify-center py-4 px-8 md:text-lg">
-              Blah Blah
+           About Us
             </button>
           </div>
         </div>
@@ -84,16 +80,9 @@ const HeroMid = () => {
           <div className="w-full h-full bg-black z-10 absolute top-0 opacity-40"></div>
           <div className="herodesc z-20 flex flex-col space-y-8 justify-center items-center w-3/4 h-full">
             <h1 className="text-white text-5xl md:text-7xl font-bold text-center leading-10">
-              Bigger Than The Last
+              Ale Interior design
             </h1>
-            <p className="text-white md:w-1/2 text-base text-center leading-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              doloribus sit numquam reiciendis facilis dolores nam eligendi
-              eaque suscipit quisquam?
-            </p>
-            <button className="bg-green-900 text-xs text-white flex items-center justify-center py-4 px-8 md:text-lg">
-              Blah Blah
-            </button>
+          
           </div>
         </div>
       </Carousel>

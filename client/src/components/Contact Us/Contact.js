@@ -52,10 +52,10 @@ export default class Contact extends React.Component {
 
   <div>
   <h3  className='text-xl px-8 my-5 md:text-gray-200 '> Address</h3>
- <div className='flex gap-8 px-4'> <a href="#" className='text-2xl hover:text-blue-600'>
+ <div className='flex gap-8 px-4'> <a href="https://maps.app.goo.gl/W1m4yRQ6KYDqKKw29" className='text-2xl hover:text-blue-600'>
      
       <i class="fa fa-map-marker icon" ></i>    </a>
-      <p> somewhere in addis </p>
+      <p> Addis Ababa: Ethio China St </p>
       </div>
       <h3  className='px-8 text-xl my-5  mt-8 md:text-gray-200 '> Call Us</h3>
  <div className='flex gap-8 px-4'> <a href="#" className='text-2xl hover:text-green-600'>

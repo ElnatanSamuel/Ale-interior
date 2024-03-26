@@ -36,11 +36,8 @@ const About = () => {
             Creative solutions by professional designers
           </p>
           <p className="leading-8 text-justify p-4 text-sm ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-            libero eos velit, in dicta dolor voluptates ullam. Cumque commodi
-            molestiae quas officia eligendi voluptatum ab. Quos a, excepturi
-            libero quidem odit asperiores dolore aut ea nostrum incidunt. Beatae
-          </p>
+          Founded six years ago in Addis Ababa our firm has been transforming spaces across the city. 
+          Our goal has been to guide our clients from concept to creation, ensuring that every ... </p>
           <button className="md:py-4 w-1/2 md:px-6 bg-brownmain text-white">
             Continue Reading &rarr;
           </button>

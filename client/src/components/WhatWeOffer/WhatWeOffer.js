@@ -7,7 +7,7 @@ const WhatWeOffer = () => {
       <div className=" offer max-w-7xl m-auto">
         <div className="">
           <h2 className="text-lg text-green-800 main text-center">WHY CHOOSE US</h2>
-          <h3 className="text-xl md:text-5xl mt-4 font-bold text-center opacity-80 text-black">
+          <h3 className="text-xl md:text-5xl mt-4 mb-4 font-bold text-center opacity-80 text-black">
             We work to an extremely high <br /> standard of customer
             satisfaction
           </h3>

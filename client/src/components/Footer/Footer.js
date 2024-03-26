@@ -29,16 +29,16 @@ const year = today.getFullYear();
               <li className="text-base text-white cursor-pointer">
                 Email:{" "}
                 <span className="text-base text-limegreen">
-                  blahblah@gmail.com
+                aleinteriordesign940@gmail.com
                 </span>
               </li>
               <li className="text-base text-white">
                 Phone:{" "}
-                <span className="text-base text-limegreen">1234536778</span>
+                <span className="text-base text-limegreen">+251 937888866</span>
               </li>
               <li className="text-base text-white">
                 Address:{" "}
-                <span className="text-base text-limegreen">someplace</span>
+                <span className="text-base text-limegreen">Addis Ababa, Ethio China St</span>
               </li>
             </ul>
           </div>

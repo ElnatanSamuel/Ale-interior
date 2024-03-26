@@ -21,11 +21,7 @@ const PremiumQuality = () => {
         <p className="text-3xl md:text-6xl font-bold opacity-90">
           Your comfort is our only priority
         </p>
-        <p className="text-nase text-center">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi tempore
-          dicta voluptas quos doloribus aliquam maxime, debitis voluptatibus
-          voluptates dolor.
-        </p>
+       
         <div className="flex flex-col space-y-2">
           <p className="opacity-80 text-sm">MON-FRI: 10PM-12PM</p>
           <p className="opacity-80 text-sm">MON-FRI: 10PM-12PM</p>

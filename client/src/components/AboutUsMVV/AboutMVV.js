@@ -10,9 +10,7 @@ const AboutMVV = () => {
             What we stand for
           </p>
           <p className="text-white md:text-xl text-center w-full px-4 md:w-1/2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            blanditiis sequi dolore ut neque voluptate adipisci perspiciatis
-            nesciunt, vero aliquid.
+          We stand for transforming spaces with expertise, creativity, and sustainability, enriching lives through inspired design.
           </p>
           <div className="MVV m-auto max-w-7xl flex items-center justify-center">
             <div className="mission">
@@ -23,11 +21,7 @@ const AboutMVV = () => {
               <h2 className="font-bold">Mission</h2>
               <p className="text-sm text-center">
                 {" "}
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate the visual form of a document
-                or a typeface without relying on meaningful content. Lorem ipsum
-                may be used as a placeholder before the final copy is available.
-              </p>
+                To passionately redefine interior spaces with expertise, creativity, & sustainability for inspired living environments.   </p>
             </div>{" "}
             <div className="vision">
               <img
@@ -37,11 +31,7 @@ const AboutMVV = () => {
               <h2 className="font-bold">Vision</h2>
               <p className="text-sm text-center">
                 {" "}
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate the visual form of a document
-                or a typeface without relying on meaningful content. Lorem ipsum
-                may be used as a placeholder before the final copy is available.
-              </p>
+                To become  leader in innovative design, seamlessly integrating functionality & aesthetics for remarkable spaces.    </p>
             </div>{" "}
             <div className="value">
               <img
@@ -51,11 +41,7 @@ const AboutMVV = () => {
               <h2 className="font-bold">Value</h2>
               <p className="text-sm text-center">
                 {" "}
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate the visual form of a document
-                or a typeface without relying on meaningful content. Lorem ipsum
-                may be used as a placeholder before the final copy is available.
-              </p>
+                Excellence, creativity, sustainability, integrity, collaboration, client-centricity: Our guiding principles.   </p>
             </div>
           </div>
         </div>
