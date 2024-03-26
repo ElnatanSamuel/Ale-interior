@@ -5,6 +5,7 @@ import NavBar from "../NavbarHome/Navbar";
 import WhatWeOffer from "../WhatWeOffer/WhatWeOffer";
 import PremiumQuality from "../PremiumQuality/PremiumQuality";
 import DIDI from "../DIDI/DIDI";
+import { motion } from "framer-motion";
 
 const AboutPageUI = () => {
   return (
@@ -12,19 +13,40 @@ const AboutPageUI = () => {
       <div className="aboutcontainerhero relative">
         <NavBar />
         <div className="textOnPicture">
-        <div className="textOnPicture w-full h-full bg-black z-1 absolute top-0 opacity-50"></div>
-        <h1 className="aboutherotext">
-          Transforming spaces into dreams, where every corner tells a story of
-          elegance and comfort <br/> – Welcome to a world where design meets emotion
-        </h1>
-      </div></div>
-      <div className="aboutPageUI2 ">
+          <div className="textOnPicture w-full h-full bg-black z-1 absolute top-0 opacity-50"></div>
+          <motion.h1
+            initial={{ opacity: 0, x: 300 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="aboutherotext"
+          >
+            Transforming spaces into dreams, where every corner tells a story of
+            elegance and comfort. Welcome to a world where design meets emotion
+          </motion.h1>
+        </div>
+      </div>
+      <div className="aboutPageUI2 max-w-7xl m-auto">
         <div className="AboutText2 flex">
           <div className="abouttext2left w-full">
-            <h1 className="text-lg text-green-800">ABOUT US</h1>
-            <p className="aboutmaintitle2 opacity-80 font-medium">
+            <motion.h1
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="text-base text-center lg:text-left lg:text-lg text-green-800"
+            >
+              ABOUT US
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="aboutmaintitle2 opacity-80 font-medium"
+            >
               Creative solutions by professional designers
-            </p>
+            </motion.p>
           </div>
           <div className="abouttext2right w-full">
             <p className="text-gray-600  text-md md:text-md">

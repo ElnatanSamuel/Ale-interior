@@ -19,3 +19,30 @@ body {
   scroll-behavior: smooth;
   background-color: #e7e8da;
 }
+
+.swiper-button-next {
+  color: white !important;
+}
+.swiper-button-prev {
+  color: white !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+  padding: 6px !important;
+  margin: 5px 15px !important;
+}
+
+@media (max-width: 768px) {
+  .swiper-button-next {
+    display: none !important;
+  }
+  .swiper-button-prev {
+    display: none !important;
+  }
+
+  .swiper-pagination-bullet {
+    padding: 3px !important;
+    margin: 5px 15px !important;
+  }
+}

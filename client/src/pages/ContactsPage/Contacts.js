@@ -1,10 +1,15 @@
 import React from "react";
-import Contact from './../../components/Contact Us/Contact';
+import "./Contacts.scss";
+// import Contact from "../../components/Contacts/Contacts";
+import Contact from "./../../components/Contact Us/Contact";
+
+const ContactsPage = () => {
+  return <Contact />;
+};
+// refs/remotes/origin/main
 
 const Contacts = () => {
-  return (
-    <Contact/>
-  );
+  return <Contact />;
 };
 
-export default Contacts;
+export default ContactsPage;

@@ -5,6 +5,7 @@ import Home from "../../pages/HomePage/Home";
 import Services from "../../pages/ServicesPage/Services";
 import Contacts from "../../pages/ContactsPage/Contacts";
 import Layout from "../Layout/Layout";
+import ContactsPage from "../../pages/ContactsPage/Contacts";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/contacts",
-        element: <Contacts />,
+        element: <ContactsPage />,
       },
       {
         path: "/services",

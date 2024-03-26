@@ -11,16 +11,18 @@ const LatestBlogCard = () => {
         alt=""
         className="blogcardimg w-full object-cover"
       />
-      <h1 className="text-xl md:text-3xl font-bold opacity-80">
+      <h1 className="text-base  lg:text-3xl font-bold opacity-80">
         How to start a successful photography business
       </h1>
-      <p className="font-bold opacity-50 text-sm">
+      <p className="font-bold opacity-50 text-xs lg:text-sm">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
         hic vitae? Quibusdam et eius, ea omnis hic iusto exercitationem
         mollitia.
       </p>
       <div className="blogcardlinks flex justify-between items-center">
-        <p className="text-lightgreen pb-4 font-bold">Read More &rarr;</p>
+        <p className="text-lightgreen pb-4 text-sm lg:text-base font-bold">
+          Read More &rarr;
+        </p>
         {/* <div className="blogcardicons flex space-x-4">
           <InstagramIcon />
           <FacebookIcon />

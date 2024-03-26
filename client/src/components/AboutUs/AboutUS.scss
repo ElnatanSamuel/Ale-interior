@@ -1,36 +1,32 @@
-.abouthomeimg1, .abouthomeimg2 {    
+.abouthomeimg1,
+.abouthomeimg2 {
     height: 550px;
     object-fit: cover;
 }
 .aboutmaintitle {
     font-size: 2.7rem;
 }
-@media only screen and (max-width:769px){
-    .abouthomeimg1{
+@media only screen and (max-width: 769px) {
+    .abouthomeimg1 {
         display: none;
     }
-    .aboutmaintitle{
-        padding: 3%;
+    .aboutmaintitle {
+        padding-top: 0%;
         font-size: 1.5rem;
         width: 100%;
     }
-    .abouthomeimg2{
+    .abouthomeimg2 {
         margin-top: 5%;
         border-radius: 1%;
         object-fit: cover;
-        height: 400px;
-        margin-bottom: -5%;
+        height: 300px;
+        margin-bottom: -10%;
     }
-    .HomeAboutUs{
+    .HomeAboutUs {
         padding: 3%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin: auto;
     }
-    .HomeAboutUs h1{
-        font-size: 1.3rem;        
+    .HomeAboutUs h1 {
     }
 }
-
-

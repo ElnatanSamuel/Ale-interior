@@ -1,5 +1,4 @@
 .projectscontainer {
-    height: 600px;
     .projectimg {
         height: 576px;
     }
@@ -19,6 +18,33 @@
         transition: all 0.5s ease;
         &:hover {
             transform: scale(1.05);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .projectscontainer {
+        .projectimg {
+            height: 100%;
+            width: 100%;
+        }
+        .projrow {
+            .projrowimg {
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    .projectscontainer {
+        .projectimg {
+            height: 100%;
+            width: 100%;
+        }
+        .projrow {
+            .projrowimg {
+                width: 100%;
+            }
         }
     }
 }
