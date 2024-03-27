@@ -24,7 +24,7 @@ const Hero = () => {
           <div className="w-full h-full bg-black z-10 absolute top-0 opacity-40"></div>
           <div className="herodesc z-20 flex flex-col space-y-8 justify-center items-start w-3/4 h-full">
             <h1 className="text-white md:text-6xl font-medium text-center leading-10">
-              Something Big
+              Ale Interior Design
             </h1>
             <p className="text-white w-2/4 text-base text-start leading-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur

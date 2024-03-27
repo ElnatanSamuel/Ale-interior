@@ -26,21 +26,17 @@ const Footer = () => {
             <ul>
               <li className="text-sm lg:text-base text-white cursor-pointer">
                 Email:{" "}
-                <span className="text-sm lg:text-base text-limegreen">
-                  blahblah@gmail.com
+                <span className="text-base text-limegreen">
+                aleinteriordesign940@gmail.com
                 </span>
               </li>
               <li className="text-sm lg:text-base text-white">
                 Phone:{" "}
-                <span className="text-sm lg:text-base text-limegreen">
-                  1234536778
-                </span>
+                <span className="text-base text-limegreen">+251 937888866</span>
               </li>
               <li className="text-sm lg:text-base text-white">
                 Address:{" "}
-                <span className="text-sm lg:text-base text-limegreen">
-                  someplace
-                </span>
+                <span className="text-base text-limegreen">Addis Ababa, Ethio China St</span>
               </li>
             </ul>
           </div>
