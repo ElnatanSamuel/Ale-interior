@@ -1,19 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Blogs.scss";
 import BlogCard from "../../components/BlogCard/BlogCard";
 import RecentBlogs from "../../components/RecentBlogs/RecentBlogs";
 import NavBarMain from "../../components/NavbarMain/NavbarMain";
 import { motion } from "framer-motion";
+import client from "../../client";
 
 const Blogs = () => {
-  const blogs = [1, 2, 3];
+  const [allPostData, setAllPostData] = useState(null);
+
+  useEffect(() => {
+    client
+      .fetch(
+        `*[_type == "post"]{
+          title,
+          slug,
+          body,
+          mainImage{
+            asset->{
+              _id,
+              url
+            },
+     
+          }
+        }`
+      )
+      .then((data) => setAllPostData(data))
+      .catch(console.error);
+
+    console.log(allPostData);
+  }, [allPostData]);
   return (
     <>
       <NavBarMain />
       <div className="blogpagecontainer max-w-7xl m-auto mt-28">
         <div className="blogcard flex flex-col space-y-16 mb-10">
-          {blogs.map((item) => (
-            <BlogCard />
+          {allPostData?.map((item) => (
+            <BlogCard item={item} key={item.slug.current} />
           ))}
         </div>
         <motion.div

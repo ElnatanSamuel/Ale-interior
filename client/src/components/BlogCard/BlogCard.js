@@ -4,7 +4,7 @@ import "./BlogCard.scss";
 // import FacebookIcon from "@mui/icons-material/Facebook";
 import { motion } from "framer-motion";
 
-const BlogCard = () => {
+const BlogCard = ({ item }) => {
   return (
     <div className="flex flex-col space-y-8">
       <motion.img
@@ -12,7 +12,7 @@ const BlogCard = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.4, delay: 0.4 }}
-        src="https://isdi.in/blog/wp-content/uploads/2021/07/Interior-Material-Combinations.jpg"
+        src={item.mainImage.asset.url}
         alt=""
         className="blogcardimg w-full object-cover"
       />
@@ -23,7 +23,7 @@ const BlogCard = () => {
         transition={{ duration: 0.6, delay: 0.6 }}
         className="text-lg w-full md:text-2xl lg:text-3xl font-bold"
       >
-        How to start a successful photography business
+        {item.title}
       </motion.h1>
       <motion.p
         initial={{ opacity: 0 }}
