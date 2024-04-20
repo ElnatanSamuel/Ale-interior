@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutUS.scss";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -43,7 +44,7 @@ const About = () => {
             transition={{ duration: 0.7, delay: 0.7 }}
             className="aboutmaintitle opacity-80 font-bold"
           >
-            Creative solutions by professional designers
+            Shaping Dreams into Spaces
           </motion.p>
           <motion.p
             initial={{ opacity: 0, x: 100 }}
@@ -52,20 +53,27 @@ const About = () => {
             transition={{ duration: 0.9, delay: 0.9 }}
             className="leading-8 text-justify pt-2 text-sm "
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-            libero eos velit, in dicta dolor voluptates ullam. Cumque commodi
-            molestiae quas officia eligendi voluptatum ab. Quos a, excepturi
-            libero quidem odit asperiores dolore aut ea nostrum incidunt. Beatae
+            At Ale interior, we don't just design interiors; we curate
+            experiences. With a blend of creativity, precision, and a keen eye
+            for detail, we transform ordinary spaces into extraordinary
+            sanctuaries. From concept to completion, our team is dedicated to
+            bringing your vision to life, crafting environments that reflect
+            your personality, style, and aspirations. Let us redefine the way
+            you experience your home or workspace. Welcome to a world where
+            every room tells a story.
           </motion.p>
-          <motion.button
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 1 }}
-            className="bg-brownmain text-white text-xs px-6 py-4 mt-6 md:w-1/3 md:text-base lg:w-1/2"
-          >
-            Continue Reading &rarr;
-          </motion.button>
+          <Link to="/about">
+            {" "}
+            <motion.button
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 1 }}
+              className="bg-brownmain text-white text-xs px-6 py-4 mt-6 md:w-1/3 md:text-base lg:w-1/2"
+            >
+              Continue Reading &rarr;
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
     </div>

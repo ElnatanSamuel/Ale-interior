@@ -1,10 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Latestblog.scss";
 import BlogCard from "../BlogCard/BlogCard";
 import LatestBlogCard from "./LatestBlogCard";
 import { motion } from "framer-motion";
+import client from "../../client";
 
 const LatestBlog = () => {
+  const [allPostData, setAllPostData] = useState(null);
+
+  useEffect(() => {
+    client
+      .fetch(
+        `*[_type == "post"]{
+          title,
+          slug,
+          date,
+          publishedAt,
+          body,
+          mainImage{
+            asset->{
+              _id,
+              url
+            },
+     
+          }
+        }`
+      )
+      .then((data) => setAllPostData(data))
+      .catch(console.error);
+  }, [allPostData]);
   return (
     <div className="max-w-7xl m-auto flex flex-col items-center mt-12 md:mt-20 space-y-4 mb-20">
       <motion.p
@@ -31,11 +55,11 @@ const LatestBlog = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 1 }}
-        className="laterstBlogs md:flex justify-center md:space-x-6 pt-4"
+        className="laterstBlogs grid grid-cols-1 md:grid-cols-3  gap-4 justify-center pt-4"
       >
-        <LatestBlogCard />
-        <LatestBlogCard />
-        <LatestBlogCard />
+        {allPostData?.map((item) => (
+          <LatestBlogCard item={item} key={item.slug.current} />
+        ))}
       </motion.div>
     </div>
   );

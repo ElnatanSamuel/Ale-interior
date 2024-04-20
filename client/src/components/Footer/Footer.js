@@ -11,38 +11,42 @@ const Footer = () => {
   const today = new Date();
   const year = today.getFullYear();
   return (
-    <div className="footercontainer w-full">
-      <div className="mainfootercontainer max-w-7xl m-auto h-full flex justify-between items-center">
-        <div className="col">
-          <img src="/img/aleLogo.png" alt="" className="md:w-3/5" />
+    <div className="footercontainer w-full ">
+      <div className="mainfootercontainer px-4 max-w-7xl m-auto h-full flex flex-col md:flex-row  justify-center md:justify-between items-center">
+        <div className="col flex justify-center items-center md:block">
+          <img src="/img/aleLogo.png" alt="" className="w-2/3 md:w-3/5" />
         </div>
 
         <div className=" flex flex-col space-y-8 text-offwhite">
-          <h1 className="middetail uppercase font-bold text-sm md:text-base lg:text-lg">
+          <h1 className="middetail uppercase font-bold text-xs md:text-base lg:text-lg">
             Contact Details
           </h1>
           <div className="h-1 w-8  bg-white"></div>
           <div className="contactlist">
             <ul>
-              <li className="text-sm lg:text-base text-white cursor-pointer">
+              <li className="text-xs md:text-base text-white cursor-pointer">
                 Email:{" "}
-                <span className="text-base text-limegreen">
-                aleinteriordesign940@gmail.com
+                <span className="text-xs md:text-base text-limegreen">
+                  aleinteriordesign940@gmail.com
                 </span>
               </li>
-              <li className="text-sm lg:text-base text-white">
+              <li className="text-xs md:text-base text-white">
                 Phone:{" "}
-                <span className="text-base text-limegreen">+251 937888866</span>
+                <span className="text-sm md:text-base text-limegreen">
+                  +251 937888866
+                </span>
               </li>
-              <li className="text-sm lg:text-base text-white">
+              <li className="text-xs md:text-base text-white">
                 Address:{" "}
-                <span className="text-base text-limegreen">Addis Ababa, Ethio China St</span>
+                <span className="text-xs md:text-base text-limegreen">
+                  Addis Ababa, Ethio China St
+                </span>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div className="bg-black p-4 mb-4">
+      <div className="bg-black p-4  mb-4">
         <p className="text-center text-xs md:text-base text-white">
           {" "}
           &#9400; {year} Ale Interiors. All rights reserved.

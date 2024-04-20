@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProjectSection.scss";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const ProjectSection = () => {
   return (
@@ -45,14 +46,14 @@ const ProjectSection = () => {
         >
           <div className="projrow2 w-full h-full relative flex justify-center items-end">
             <img
-              src="https://www.thespruce.com/thmb/P4hBQtEPZVrrWPdbtXy7-wv9fiE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1161177015-f1de4ba58a6c4f50969d9119d80405a6.jpg"
+              src="/img/ale1.jpg"
               alt=""
               className="projectimg w-full absolute top-0 z-0 object-cover"
             />
             <div className="w-full h-full bg-black z-10 absolute top-0 opacity-40"></div>
             <div className="z-20 py-10 px-4 lg:px-10 lg:py-10 space-y-4">
               <h1 className="font-bold text-xl md:text-2xl lg:text-5xl text-white">
-                Some Title
+                Project 1
               </h1>
               <p className="text-xs md:text-sm lg:text-base  lg:w-3/4 text-white opacity-80">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -73,14 +74,14 @@ const ProjectSection = () => {
             className="projrow row relative h-full flex justify-center items-end"
           >
             <img
-              src="https://t3.ftcdn.net/jpg/03/73/51/06/360_F_373510690_cQQLplLNbi0l84A7sftZq8dSvdKOGCcj.jpg"
+              src="/img/ale2.jpg"
               alt=""
               className="projrowimg w-full absolute top-0 z-0 object-cover"
             />
             <div className="w-full h-full bg-black z-10 absolute top-0 opacity-40"></div>
             <div className="z-20 py-10 px-4 lg:px-10 lg:py-10 space-y-4">
               <h1 className="font-bold text-xl md:text-2xl lg:text-5xl text-white">
-                Some Title
+                Project 2
               </h1>
               <p className="text-xs md:text-sm lg:text-base lg:w-3/4 text-white opacity-80">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -99,14 +100,14 @@ const ProjectSection = () => {
             className="projrow row h-full flex justify-center items-end relative"
           >
             <img
-              src="https://media.designcafe.com/wp-content/uploads/2023/01/31151510/contemporary-interior-design-ideas-for-your-home.jpg"
+              src="/img/ale4.jpg"
               alt=""
               className="projrowimg w-full absolute top-0 z-0 object-cover"
             />
             <div className="w-full h-full bg-black z-10 absolute top-0 opacity-40"></div>
             <div className="z-20 py-10 px-4 lg:px-10 lg:py-10 space-y-4">
               <h1 className="font-bold text-xl md:text-2xl lg:text-5xl text-white">
-                Some Title
+                Project 3
               </h1>
               <p className="text-xs md:text-sm lg:text-base lg:w-3/4 text-white opacity-80">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -120,9 +121,11 @@ const ProjectSection = () => {
         </div>
       </div>
 
-      <p className="text-green-900 text-center text-sm md:text-lg pt-20 font-bold underline cursor-pointer">
-        View All Projects &rarr;
-      </p>
+      <Link to="/services">
+        <p className="text-green-900 text-center text-sm md:text-lg pt-20 font-bold underline cursor-pointer">
+          View All Projects &rarr;
+        </p>
+      </Link>
     </div>
   );
 };

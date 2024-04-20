@@ -19,6 +19,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { Link } from "react-router-dom";
 
 const HeroMid = () => {
   return (
@@ -35,25 +36,27 @@ const HeroMid = () => {
         scrollbar={{ draggable: true }}
       >
         <SwiperSlide>
-          <div className="carouselcontainer flex justify-center items-center w-full h-full">
+          <div className="carouselcontainer flex justify-center items-center ">
             <img
-              src="https://isdi.in/blog/wp-content/uploads/2021/07/Interior-Material-Combinations.jpg"
+              src="https://i0.wp.com/chronos-stores.com/wp-content/uploads/2021/02/how-to-choose-artworks-chronos-stores-photo-by-muratellioglu-shutterstock.jpg?fit=1000%2C700&ssl=1"
               alt=""
               className="carouselimg w-full absolute top-0 left-0 z-0"
             />
             <div className="w-full h-full bg-black z-10 absolute top-0 opacity-50"></div>
             <div className="herodesc z-20 flex flex-col space-y-6 justify-center items-center w-3/4 h-full">
               <h1 className="text-white text-3xl font-bold text-center leading-10 md:text-4xl lg:text-7xl">
-                Something Big
+                Journey Through Our Creations
               </h1>
-              <p className="text-white  text-xs text-center leading-6 lg:text-base lg:leading-8 lg:w-1/2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur doloribus sit numquam reiciendis facilis dolores nam
-                eligendi eaque suscipit quisquam?
+              <p className="text-white font-bold  text-xs text-center leading-6 lg:text-lg lg:leading-8 lg:w-1/2">
+                Step into a world where imagination meets reality. Explore our
+                portfolio and immerse yourself in a gallery of exquisite designs
+                crafted to inspire.
               </p>
-              <button className="bg-green-900 text-xs text-white flex items-center justify-center py-4 px-8 lg:text-lg">
-                Blah Blah
-              </button>
+              <Link to="/services">
+                <button className="bg-green-900 font-bold text-xs text-white flex items-center justify-center py-4 px-8 lg:text-lg">
+                  Our Portfolio
+                </button>
+              </Link>
             </div>
           </div>
         </SwiperSlide>
@@ -61,23 +64,25 @@ const HeroMid = () => {
           {" "}
           <div className="carouselcontainer flex justify-center items-center w-full ">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdUtfBLtgA7t0-_vu2KVTfLCPVlHxiRRQ2EQ&s"
+              src="https://media.licdn.com/dms/image/D5612AQGxJoxauX-v-w/article-cover_image-shrink_720_1280/0/1697507291673?e=2147483647&v=beta&t=zHfrfSAOfWKgTn9Cv0dXsBjbV187M0FuF7SWVHIUf_s"
               alt=""
               className="carouselimg w-full h-full absolute top-0 z-0"
             />
             <div className="w-full h-full bg-black z-10 absolute top-0 opacity-40"></div>
             <div className="herodesc z-20 flex flex-col space-y-8 justify-center items-center w-3/4 h-full">
               <h1 className="text-white text-3xl font-bold text-center leading-10 md:text-4xl lg:text-7xl">
-                Another Big Thing
+                Discover the Art of Timeless Design
               </h1>
-              <p className="text-white  text-xs text-center leading-6 lg:text-base lg:leading-8 lg:w-1/2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur doloribus sit numquam reiciendis facilis dolores nam
-                eligendi eaque suscipit quisquam?
+              <p className="text-white font-bold  text-xs text-center leading-6 lg:text-lg lg:leading-8 lg:w-1/2">
+                Step into a world of inspiration and expertise. Explore our blog
+                for expert tips, trends, and stories that breathe life into your
+                design journey.
               </p>
-              <button className="bg-green-900 text-xs text-white flex items-center justify-center py-4 px-8 lg:text-lg">
-                Blah Blah
-              </button>
+              <Link to="/blogs">
+                <button className="bg-green-900 font-bold text-xs text-white flex items-center justify-center py-4 px-8 lg:text-lg">
+                  Our Blog
+                </button>
+              </Link>
             </div>
           </div>
         </SwiperSlide>
@@ -85,23 +90,25 @@ const HeroMid = () => {
           {" "}
           <div className="carouselcontainer flex justify-center items-center w-full ">
             <img
-              src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D"
+              src="https://foyr.com/learn/wp-content/uploads/2019/01/best-interior-design-tips.jpg"
               alt=""
               className="carouselimg w-full h-full absolute top-0 z-0"
             />
             <div className="w-full h-full bg-black z-10 absolute top-0 opacity-40"></div>
             <div className="herodesc z-20 flex flex-col space-y-8 justify-center items-center w-3/4 h-full">
               <h1 className="text-white text-3xl font-bold text-center leading-10 md:text-4xl lg:text-7xl">
-                Bigger Than The Last
+                Let's Create Your Dream Space Together
               </h1>
-              <p className="text-white  text-xs text-center leading-6 lg:text-base lg:leading-8 lg:w-1/2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur doloribus sit numquam reiciendis facilis dolores nam
-                eligendi eaque suscipit quisquam?
+              <p className="text-white text-xs font-bold text-center leading-6 lg:text-lg lg:leading-8 lg:w-1/2">
+                Embark on a journey to redefine luxury and comfort. Our team of
+                experts is ready to turn your vision into reality. Contact us
+                today and let's start designing your perfect oasis.
               </p>
-              <button className="bg-green-900 text-xs text-white flex items-center justify-center py-4 px-8 lg:text-lg">
-                Blah Blah
-              </button>
+              <Link to="/contacts">
+                <button className="bg-green-900 text-xs font-bold text-white flex items-center justify-center py-4 px-8 lg:text-lg">
+                  Contact Us
+                </button>
+              </Link>
             </div>
           </div>
         </SwiperSlide>

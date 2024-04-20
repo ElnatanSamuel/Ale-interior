@@ -1,9 +1,9 @@
 .carouselcontainer {
+  height: 100vh;
+  .carouselimg {
     height: 100vh;
-    .carouselimg {
-        height: 100vh;
-        object-fit: cover;
-    }
+    object-fit: cover;
+  }
 }
 
 // @media (min-width: 760px) {

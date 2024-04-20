@@ -44,19 +44,19 @@ const NavBar = () => {
         {/* Desktop menu centered */}
         <div className="navLinks hidden lg:flex  justify-between">
           <Link to="/">
-            <li className="text-white block mb-2">Home</li>
+            <li className="text-white font-bold block mb-2">Home</li>
           </Link>
           <Link to="/about">
-            <li className="text-white block mb-2">About</li>
+            <li className="text-white font-bold block mb-2">About</li>
           </Link>
           <Link to="/services">
-            <li className="text-white block mb-2">Portfolio</li>
+            <li className="text-white font-bold block mb-2">Portfolio</li>
           </Link>
           <Link to="/blogs">
-            <li className="text-white block mb-2">Blog</li>
+            <li className="text-white font-bold block mb-2">Blog</li>
           </Link>
           <Link to="/contacts">
-            <li className="text-white block mb-2">Contact</li>
+            <li className="text-white font-bold block mb-2">Contact</li>
           </Link>
         </div>
         {/* Mobile menu items centered within the navbar */}
@@ -84,19 +84,19 @@ const NavBar = () => {
               </svg>
             </button>
             <Link to="/">
-              <span>Home</span>
+              <span className="font-bold">Home</span>
             </Link>
             <Link to="/about">
-              <span>About</span>
+              <span className="font-bold">About</span>
             </Link>
             <Link to="/services">
-              <span>Portfolio</span>
+              <span className="font-bold">Portfolio</span>
             </Link>
             <Link to="/blogs">
-              <span>Blog</span>
+              <span className="font-bold">Blog</span>
             </Link>
             <Link to="/contacts">
-              <span>Contact</span>
+              <span className="font-bold">Contact</span>
             </Link>
           </div>
         )}

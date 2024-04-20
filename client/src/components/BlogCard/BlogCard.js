@@ -14,7 +14,7 @@ const BlogCard = ({ item }) => {
         transition={{ duration: 0.4, delay: 0.4 }}
         src={item.mainImage.asset.url}
         alt=""
-        className="blogcardimg w-full object-cover"
+        className="blogcardimg w-full  object-cover"
       />
       <motion.h1
         initial={{ opacity: 0 }}
@@ -32,9 +32,9 @@ const BlogCard = ({ item }) => {
         transition={{ duration: 0.8, delay: 0.8 }}
         className="font-bold text-sm lg:text-base opacity-50"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
-        hic vitae? Quibusdam et eius, ea omnis hic iusto exercitationem
-        mollitia.
+        {item.body?.map((item, index) => (
+          <p key={index}>{item.children[0].text}</p>
+        ))}
       </motion.p>
       <div className="blogcardlinks flex justify-between items-center">
         <motion.p

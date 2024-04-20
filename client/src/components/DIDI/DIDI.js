@@ -1,6 +1,7 @@
 import React from "react";
 import "./DIDI.scss";
 import { Parallax, Background } from "react-parallax";
+import { Link } from "react-router-dom";
 
 const DIDI = () => {
   return (
@@ -15,9 +16,12 @@ const DIDI = () => {
           <p className="text-xl md:text-3xl lg:text-5xl text-white z-10 font-bold text-center md:w-1/2 mb-12">
             We can build you the house of your dreams
           </p>
-          <button className="z-10 bg-limegreen text-sm py-3 px-5 md:py-4 md:px-8 text-black font-semibold">
-            Contact us <span className="font-bold">&rarr;</span>
-          </button>
+          <Link to="/contacts" className="z-10">
+            <button className="z-10 font-bold bg-limegreen text-sm md:text-lg py-3 px-5 md:py-4 md:px-8 text-black ">
+              Contact us{" "}
+              <span className="md:font-bold md:text-2xl">&rarr;</span>
+            </button>
+          </Link>
         </div>
       </div>
     </Parallax>

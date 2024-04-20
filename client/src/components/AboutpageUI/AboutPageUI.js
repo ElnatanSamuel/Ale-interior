@@ -50,17 +50,19 @@ const AboutPageUI = () => {
           </div>
           <div className="abouttext2right w-full">
             <p className="text-gray-600  text-md md:text-md">
-            Founded six years ago in Addis Ababa our firm has been transforming spaces across the city. 
-          Our goal has been to guide our clients from concept to creation, ensuring that every step reflects your vision. Your dream space awaits, brought to life through our dedication and expertise.
-        
+              Founded six years ago in Addis Ababa our firm has been
+              transforming spaces across the city. Our goal has been to guide
+              our clients from concept to creation, ensuring that every step
+              reflects your vision. Your dream space awaits, brought to life
+              through our dedication and expertise.
             </p>
             <p className="text-gray-600 pt-6 text-md md:text-md">
-            Our personalized designs are carefuly crafted by seasoned
-             experts with over six years of experience, ensuring every
-              detail reflects your unique vision and needs. With a focus
-               on elevating aesthetics, we blend expertise with 
-               creativity to transform spaces into stunning showcases
-                of style and sophistication. </p>
+              Our personalized designs are carefuly crafted by seasoned experts
+              with over six years of experience, ensuring every detail reflects
+              your unique vision and needs. With a focus on elevating
+              aesthetics, we blend expertise with creativity to transform spaces
+              into stunning showcases of style and sophistication.{" "}
+            </p>
           </div>
         </div>
         {/* <div className="AboutImg2">

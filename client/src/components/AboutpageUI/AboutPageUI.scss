@@ -1,133 +1,133 @@
 .AboutMain2 {
-    .aboutcontainerhero {
-        height: 600px;
-        background: url("https://c4.wallpaperflare.com/wallpaper/59/97/72/design-sofa-furniture-watch-wallpaper-preview.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        // background-image: linear-gradient(to bottom, #957d61, #957d61);
-        // background-size: cover;
-        // background-repeat: no-repeat;
-        position: relative;
-    }
+  .aboutcontainerhero {
+    height: 600px;
+    background: url("https://www.decorpot.com/images/blogimage912051889Exquisite-Luxury-Villa-Interior-Design.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-image: linear-gradient(to bottom, #957d61, #957d61);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    position: relative;
+  }
 }
 .textOnPicture {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: flex-end;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
 }
 
 .aboutherotext {
-    position: absolute;
-    bottom: 0;
-    font-size: 1.7rem;
-    left: 0;
-    width: 60%;
-    padding: 30px;
-    background-color: rgba(0, 0, 0, 0); // Semi-transparent black background
-    color: white;
-    z-index: 2;
+  position: absolute;
+  bottom: 0;
+  font-size: 1.7rem;
+  left: 0;
+  width: 60%;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0); // Semi-transparent black background
+  color: white;
+  z-index: 2;
 }
 
 @media only screen and (max-width: 769px) {
-    .aboutherotext {
-        width: 90%;
-        font-size: 1.3rem;
-    }
-    .aboutPageUI2 {
-        padding: 1%;
-    }
-    .AboutText2 {
-        display: flex;
-        flex-direction: column;
-    }
+  .aboutherotext {
+    width: 90%;
+    font-size: 1.3rem;
+  }
+  .aboutPageUI2 {
+    padding: 1%;
+  }
+  .AboutText2 {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .abouttext2left p {
-        padding: 2%;
+  .abouttext2left p {
+    padding: 2%;
 
-        text-align: center;
-    }
-    .abouttext2right p {
-        padding: 2%;
+    text-align: center;
+  }
+  .abouttext2right p {
+    padding: 2%;
 
-        text-align: center;
-        margin: auto;
-    }
+    text-align: center;
+    margin: auto;
+  }
 }
 
 .aboutPageUI2 {
-    width: 100%;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    padding: 3%;
+  width: 100%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  padding: 3%;
 
-    .AboutText2 {
-        display: flex;
-    }
-    .abouttext2left {
-        flex: 1;
-    }
-    .abouttext2right {
-        flex: 2;
-    }
+  .AboutText2 {
+    display: flex;
+  }
+  .abouttext2left {
+    flex: 1;
+  }
+  .abouttext2right {
+    flex: 2;
+  }
 }
 .aboutUs {
-    display: flex;
-    flex-direction: column;
-    margin: 2% auto;
+  display: flex;
+  flex-direction: column;
+  margin: 2% auto;
 }
 
 .AboutImg2 {
-    height: 100vh;
+  height: 100vh;
 }
 .aboutmaintitle2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 .Line {
-    background-color: #3e4824;
+  background-color: #3e4824;
 }
 
 @media only screen and (max-width: 500px) {
-    .AboutImg {
-        height: 50vh;
-        border: 1px solid blue;
-        width: 100%;
-    }
-    .AboutText {
-        padding: 1%;
-        width: 80vw;
-        border: 1px solid red;
-    }
+  .AboutImg {
+    height: 50vh;
+    border: 1px solid blue;
+    width: 100%;
+  }
+  .AboutText {
+    padding: 1%;
+    width: 80vw;
+    border: 1px solid red;
+  }
 
-    .AboutText p {
-        width: 100vw;
-        border: 1px solid red;
-        padding: 0;
+  .AboutText p {
+    width: 100vw;
+    border: 1px solid red;
+    padding: 0;
+  }
+  .aboutherotext {
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 30px 10px;
+  }
+  .aboutmaintitle2 {
+    font-size: 1.6rem;
+  }
+  .AboutMain2 {
+    .aboutcontainerhero {
+      height: 400px;
     }
-    .aboutherotext {
-        font-size: 1.1rem;
-        width: 100%;
-        padding: 30px 10px;
-    }
-    .aboutmaintitle2 {
-        font-size: 1.6rem;
-    }
-    .AboutMain2 {
-        .aboutcontainerhero {
-            height: 400px;
-        }
-    }
+  }
 }
 
 .titleBox {
-    background-color: #3e4824;
-    color: #e7e8da;
-    border: 1px solid black;
+  background-color: #3e4824;
+  color: #e7e8da;
+  border: 1px solid black;
 }
 
 .TestCard {
-    background-color: #e7e8da;
-    border-radius: 2rem;
+  background-color: #e7e8da;
+  border-radius: 2rem;
 }

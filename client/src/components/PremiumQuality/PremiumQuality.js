@@ -1,6 +1,7 @@
 import React from "react";
 import "./PremiumQuality.scss";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const PremiumQuality = () => {
   return (
@@ -58,15 +59,17 @@ const PremiumQuality = () => {
           <p className="opacity-80 text-sm">MON-FRI: 10PM-12PM</p>
         </motion.div>
 
-        <motion.button
-          initial={{ opacity: 0, x: 200 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, delay: 1 }}
-          className=" bg-brownmain text-white md:w-1/3 py-4 px-8"
-        >
-          Our services &rarr;
-        </motion.button>
+        <Link to="/services">
+          <motion.button
+            initial={{ opacity: 0, x: 200 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 1 }}
+            className=" bg-brownmain font-bold text-white md:w-1/3 py-4 px-8"
+          >
+            Our portfolio &rarr;
+          </motion.button>
+        </Link>
       </div>
     </div>
   );

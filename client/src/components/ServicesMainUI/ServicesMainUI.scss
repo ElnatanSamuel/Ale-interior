@@ -1,70 +1,70 @@
 .serviesmain {
-    .servicescontainerhero {
-        height: 600px;
-        background: url("https://i.pinimg.com/736x/69/31/e9/6931e94a7543bdcbc16b41cd4f8c7117.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        // background-image: linear-gradient(to bottom, #957d61, #957d61);
-        // background-size: cover;
-        // background-repeat: no-repeat;
-        position: relative;
-        width: 100%;
+  .servicescontainerhero {
+    height: 600px;
+    background: url("https://www.nitidodesign.com/images/02_Featured%20Projects/01_Bombay%20Realty%20ICC%20Towers%20Residence%20-%20Residential%20Interiors%20-%201500%20sq%20ft/watermarked/01.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-image: linear-gradient(to bottom, #957d61, #957d61);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
 
-        .servicesherotext {
-            color: white;
-            font-weight: 600;
-            font-size: 28px;
-            position: absolute;
-            margin-top: 430px;
-            margin-left: 30px;
-            width: 60%;
-            bottom: 30px;
-            left: 0;
-        }
+    .servicesherotext {
+      color: white;
+      font-weight: 600;
+      font-size: 28px;
+      position: absolute;
+      margin-top: 430px;
+      margin-left: 30px;
+      width: 60%;
+      bottom: 30px;
+      left: 0;
     }
+  }
 
-    .servicesmainlist {
-        .servicesmainimg {
-            flex: 2;
-            height: 500px;
-            object-fit: cover;
-        }
-        .servicesmaindesc {
-            flex: 1;
-        }
+  .servicesmainlist {
+    .servicesmainimg {
+      flex: 2;
+      height: 500px;
+      object-fit: cover;
     }
+    .servicesmaindesc {
+      flex: 1;
+    }
+  }
 }
 
 @media (max-width: 768px) {
-    .serviesmain {
-        .servicescontainerhero {
-            .servicesherotext {
-                font-size: 20px;
-                width: 80%;
-            }
-        }
-        .servicesmainlist {
-            .servicesmainimg {
-                height: 300px;
-            }
-        }
+  .serviesmain {
+    .servicescontainerhero {
+      .servicesherotext {
+        font-size: 20px;
+        width: 80%;
+      }
     }
+    .servicesmainlist {
+      .servicesmainimg {
+        height: 300px;
+      }
+    }
+  }
 }
 @media (max-width: 425px) {
-    .serviesmain {
-        .servicescontainerhero {
-            height: 400px;
-            .servicesherotext {
-                font-size: 1.1rem;
-                width: 100%;
-                padding: 10px 15px 0px 5px;
-                margin-left: 10px;
-            }
-        }
-        .servicesmainlist {
-            .servicesmainimg {
-                height: 300px;
-            }
-        }
+  .serviesmain {
+    .servicescontainerhero {
+      height: 400px;
+      .servicesherotext {
+        font-size: 1.1rem;
+        width: 100%;
+        padding: 10px 15px 0px 5px;
+        margin-left: 10px;
+      }
     }
+    .servicesmainlist {
+      .servicesmainimg {
+        height: 300px;
+      }
+    }
+  }
 }
